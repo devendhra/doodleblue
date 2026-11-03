@@ -63,7 +63,7 @@ function Hero() {
 
           <div className="hero-image-wrapper">
             <img
-              src="/images/prolane-hero.jpg"
+              src="/main1.jpg"
               alt="Sports equipment ready for training"
               className="hero-image"
             />

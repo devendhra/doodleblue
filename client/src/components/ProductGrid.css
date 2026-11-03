@@ -1,80 +1,131 @@
 
-/* ==============================
-   PRODUCT GRID
-============================== */
+/* ==========================================
+   PROLANE - PRODUCT GRID
+   Modern Sports E-commerce Layout
+   Theme: Orange + Charcoal + White
+========================================== */
 
 .product-grid {
   display: grid;
-  grid-template-columns: repeat(300px, minmax(0, 1fr));
-  gap: 24px;
-  width: 100%;
+
+  /* Desktop: 3 balanced product cards */
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+
   align-items: stretch;
+
+  gap: 28px;
+
+  width: 100%;
+  min-width: 0;
+
+  margin: 0;
+  padding: 0;
 }
 
-/* ==============================
+/* ==========================================
+   PRODUCT CARD INTEGRATION
+========================================== */
+
+.product-grid > .product-card {
+  width: 100%;
+  min-width: 0;
+  height: 100%;
+}
+
+/* ==========================================
    EMPTY PRODUCTS STATE
-============================== */
+========================================== */
 
 .product-grid-empty {
-  width: 100%;
-  min-height: 340px;
-  padding: 48px 24px;
-  background: #ffffff;
-  border: 1px dashed #d0d5dd;
-  border-radius: 18px;
-
   display: flex;
   flex-direction: column;
+
   align-items: center;
   justify-content: center;
+
+  width: 100%;
+  min-height: 360px;
+
+  padding: 45px 24px;
+
+  border: 1px dashed #e0e5dc;
+  border-radius: 22px;
+
+  background: #ffffff;
+
   text-align: center;
 }
 
-.empty-icon {
+/* Empty state icon */
+
+.product-grid-empty .empty-icon {
+  display: grid;
+  place-items: center;
+
   width: 76px;
   height: 76px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 
-  background: #fff1eb;
-  border: 1px solid #ffded0;
-  border-radius: 50%;
+  margin-bottom: 20px;
+
+  border-radius: 24px;
+
+  background: #fff0e9;
 
   font-size: 36px;
-  margin-bottom: 20px;
+
+  box-shadow: 0 8px 24px rgba(255, 87, 40, 0.07);
 }
+
+/* Empty state title */
 
 .product-grid-empty h3 {
-  color: #101828;
-  font-size: 23px;
-  font-weight: 800;
-  letter-spacing: -0.5px;
-  margin: 0 0 10px;
+  margin: 0 0 12px;
+
+  color: #171a15;
+
+  font-size: 24px;
+  font-weight: 850;
+  line-height: 1.3;
+  letter-spacing: -0.7px;
 }
+
+/* Empty state description */
 
 .product-grid-empty p {
-  max-width: 400px;
-  color: #667085;
+  max-width: 420px;
+
+  margin: 0;
+
+  color: #777d72;
+
   font-size: 14px;
   line-height: 1.8;
-  margin: 0;
 }
 
-/* ==============================
-   RESPONSIVE GRID
-============================== */
+/* ==========================================
+   LARGE DESKTOP
+========================================== */
 
-/* Laptop / Smaller Desktop */
+@media (min-width: 1500px) {
+  .product-grid {
+    gap: 30px;
+  }
+}
+
+/* ==========================================
+   LAPTOP / SMALL DESKTOP
+========================================== */
 
 @media (max-width: 1200px) {
   .product-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 20px;
+    gap: 22px;
   }
 }
 
-/* Tablet */
+/* ==========================================
+   TABLET
+========================================== */
 
 @media (max-width: 768px) {
   .product-grid {
@@ -83,38 +134,13 @@
   }
 
   .product-grid-empty {
-    min-height: 290px;
-    padding: 36px 20px;
+    min-height: 300px;
+    padding: 35px 18px;
+    border-radius: 18px;
   }
 
   .product-grid-empty h3 {
     font-size: 21px;
-  }
-}
-
-/* Mobile */
-
-@media (max-width: 480px) {
-  .product-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 12px;
-  }
-
-  .product-grid-empty {
-    min-height: 260px;
-    padding: 28px 16px;
-    border-radius: 14px;
-  }
-
-  .empty-icon {
-    width: 62px;
-    height: 62px;
-    font-size: 30px;
-    margin-bottom: 16px;
-  }
-
-  .product-grid-empty h3 {
-    font-size: 19px;
   }
 
   .product-grid-empty p {
@@ -122,10 +148,40 @@
   }
 }
 
-/* Small Mobile */
+/* ==========================================
+   SMALL MOBILE
+========================================== */
 
-@media (max-width: 340px) {
+@media (max-width: 480px) {
   .product-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 18px;
+  }
+
+  .product-grid-empty {
+    min-height: 270px;
+    padding: 30px 18px;
+  }
+
+  .product-grid-empty .empty-icon {
+    width: 65px;
+    height: 65px;
+    font-size: 30px;
+  }
+
+  .product-grid-empty h3 {
+    font-size: 20px;
+  }
+}
+
+/* ==========================================
+   ACCESSIBILITY
+========================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  .product-grid-empty,
+  .product-grid-empty * {
+    animation: none !important;
+    transition: none !important;
   }
 }

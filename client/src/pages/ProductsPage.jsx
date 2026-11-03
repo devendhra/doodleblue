@@ -251,9 +251,7 @@ function ProductsPage() {
               {/* Products */}
               {!loading && !error && (
                 <>
-                  <ProductGrid
-                    products={products}
-                  />
+                  <ProductGrid products={products} />
 
                   <Pagination
                     currentPage={pagination.page || currentPage}
