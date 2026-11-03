@@ -64,10 +64,6 @@ function CartPage() {
   const [checkoutMessage, setCheckoutMessage] = useState('')
 
   useEffect(() => {
-    if (window.location.pathname !== '/cart') window.history.replaceState(null, '', '/cart')
-  }, [])
-
-  useEffect(() => {
     try {
       localStorage.setItem(CART_STORAGE_KEY, JSON.stringify(items))
     } catch {
