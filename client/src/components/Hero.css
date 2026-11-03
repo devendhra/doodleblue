@@ -1,0 +1,522 @@
+
+/* ==============================
+   HERO SECTION
+================================ */
+
+.hero-section {
+  position: relative;
+  padding: 72px 6% 85px;
+  background: #ffffff;
+  overflow: hidden;
+}
+
+.hero-container {
+  max-width: 1280px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 65px;
+}
+
+/* ==============================
+   HERO CONTENT
+================================ */
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 570px;
+}
+
+/* Badge */
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+
+  padding: 9px 15px;
+  margin-bottom: 25px;
+
+  border: 1px solid #fce0d5;
+  border-radius: 999px;
+  background: #fff5f0;
+
+  color: #c9431c;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.6px;
+}
+
+.hero-badge-dot {
+  width: 8px;
+  height: 8px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: #f05a28;
+  box-shadow: 0 0 0 4px rgba(240, 90, 40, 0.12);
+}
+
+/* Main heading */
+
+.hero-title {
+  margin: 0;
+
+  color: #101828;
+  font-size: clamp(48px, 5.3vw, 76px);
+  font-weight: 900;
+  line-height: 1.03;
+  letter-spacing: -4px;
+}
+
+.hero-title span {
+  color: #f05a28;
+}
+
+/* Description */
+
+.hero-description {
+  max-width: 470px;
+  margin: 24px 0 30px;
+
+  color: #667085;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.9;
+}
+
+/* ==============================
+   CTA BUTTONS
+================================ */
+
+.hero-actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.hero-btn-primary,
+.hero-btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+
+  min-height: 54px;
+  padding: 0 24px;
+
+  border-radius: 12px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 750;
+
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease,
+    color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+/* Primary CTA */
+
+.hero-btn-primary {
+  background: #f05a28;
+  color: #ffffff;
+  box-shadow: 0 8px 20px rgba(240, 90, 40, 0.20);
+}
+
+.hero-btn-primary span {
+  font-size: 18px;
+  transition: transform 0.25s ease;
+}
+
+.hero-btn-primary:hover {
+  background: #d94719;
+  transform: translateY(-3px);
+  box-shadow: 0 12px 25px rgba(240, 90, 40, 0.26);
+}
+
+.hero-btn-primary:hover span {
+  transform: translate(3px, -3px);
+}
+
+/* Secondary CTA */
+
+.hero-btn-secondary {
+  border: 1px solid #d0d5dd;
+  background: #ffffff;
+  color: #101828;
+}
+
+.hero-btn-secondary:hover {
+  background: #f8fafc;
+  border-color: #98a2b3;
+  transform: translateY(-3px);
+}
+
+/* ==============================
+   TRUST HIGHLIGHTS
+================================ */
+
+.hero-highlights {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 22px;
+  margin-top: 32px;
+}
+
+.hero-highlight {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+
+  color: #475467;
+  font-size: 12px;
+  font-weight: 650;
+}
+
+.hero-highlight-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 22px;
+  height: 22px;
+  flex-shrink: 0;
+
+  border-radius: 50%;
+  background: #e7f7ec;
+  color: #16803d;
+
+  font-size: 13px;
+  font-weight: 900;
+}
+
+/* ==============================
+   HERO VISUAL
+================================ */
+
+.hero-visual {
+  position: relative;
+  min-width: 0;
+  padding: 10px 8px 12px 0;
+}
+
+.hero-image-wrapper {
+  position: relative;
+  isolation: isolate;
+
+  width: 100%;
+  height: 490px;
+
+  border-radius: 30px;
+  background: #f2f4f7;
+  overflow: hidden;
+
+  box-shadow: 0 25px 65px rgba(16, 24, 40, 0.12);
+}
+
+.hero-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: center;
+
+  transition: transform 0.7s ease;
+}
+
+.hero-image-wrapper:hover .hero-image {
+  transform: scale(1.045);
+}
+
+/* ==============================
+   FLOATING LABEL
+================================ */
+
+.hero-floating-card {
+  position: absolute;
+  left: 22px;
+  bottom: 22px;
+  z-index: 2;
+
+  display: flex;
+  align-items: center;
+  gap: 14px;
+
+  padding: 17px 22px;
+
+  background: rgba(255, 255, 255, 0.94);
+  border: 1px solid rgba(255, 255, 255, 0.65);
+  border-radius: 18px;
+
+  box-shadow: 0 12px 35px rgba(16, 24, 40, 0.12);
+
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.hero-floating-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 44px;
+  height: 44px;
+  flex-shrink: 0;
+
+  border-radius: 14px;
+  background: #fff0e8;
+  color: #f05a28;
+  font-size: 23px;
+  font-weight: 700;
+}
+
+.hero-floating-title,
+.hero-floating-subtitle {
+  margin: 0;
+}
+
+.hero-floating-title {
+  color: #101828;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+
+.hero-floating-subtitle {
+  margin-top: 5px;
+  color: #667085;
+  font-size: 11px;
+  font-weight: 650;
+  letter-spacing: 1.3px;
+}
+
+/* ==============================
+   DECORATIVE SHAPES
+================================ */
+
+.hero-decoration {
+  position: absolute;
+  z-index: 0;
+  pointer-events: none;
+  border-radius: 50%;
+}
+
+.hero-decoration-one {
+  top: -18px;
+  right: -25px;
+
+  width: 130px;
+  height: 130px;
+
+  background: #fff0e8;
+}
+
+.hero-decoration-two {
+  bottom: -20px;
+  left: -30px;
+
+  width: 100px;
+  height: 100px;
+
+  border: 18px solid #fce4d8;
+  opacity: 0.85;
+}
+
+/* ==============================
+   TABLET
+================================ */
+
+@media (max-width: 1024px) {
+  .hero-section {
+    padding: 60px 5% 70px;
+  }
+
+  .hero-container {
+    gap: 35px;
+  }
+
+  .hero-title {
+    font-size: clamp(44px, 5.5vw, 62px);
+    letter-spacing: -2.8px;
+  }
+
+  .hero-description {
+    font-size: 15px;
+  }
+
+  .hero-image-wrapper {
+    height: 410px;
+    border-radius: 24px;
+  }
+
+  .hero-highlights {
+    gap: 14px;
+  }
+}
+
+/* ==============================
+   MOBILE
+================================ */
+
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 45px 5% 60px;
+  }
+
+  .hero-container {
+    grid-template-columns: 1fr;
+    gap: 38px;
+  }
+
+  .hero-content {
+    max-width: 600px;
+  }
+
+  .hero-badge {
+    margin-bottom: 22px;
+    font-size: 10px;
+  }
+
+  .hero-title {
+    font-size: clamp(46px, 10vw, 64px);
+    letter-spacing: -2.8px;
+  }
+
+  .hero-description {
+    margin: 20px 0 25px;
+    max-width: 520px;
+    font-size: 14px;
+    line-height: 1.8;
+  }
+
+  .hero-actions {
+    gap: 12px;
+  }
+
+  .hero-btn-primary,
+  .hero-btn-secondary {
+    min-height: 50px;
+    padding: 0 18px;
+    font-size: 13px;
+  }
+
+  .hero-highlights {
+    gap: 14px 20px;
+    margin-top: 26px;
+  }
+
+  .hero-highlight {
+    font-size: 11px;
+  }
+
+  .hero-visual {
+    padding: 0 5px 10px 0;
+  }
+
+  .hero-image-wrapper {
+    height: clamp(280px, 72vw, 460px);
+    border-radius: 24px;
+  }
+
+  .hero-floating-card {
+    left: 14px;
+    bottom: 14px;
+    padding: 12px 15px;
+    gap: 11px;
+    border-radius: 14px;
+  }
+
+  .hero-floating-icon {
+    width: 38px;
+    height: 38px;
+    border-radius: 11px;
+  }
+
+  .hero-decoration-one {
+    right: -12px;
+    width: 85px;
+    height: 85px;
+  }
+
+  .hero-decoration-two {
+    left: -12px;
+    width: 65px;
+    height: 65px;
+    border-width: 12px;
+  }
+}
+
+/* ==============================
+   SMALL MOBILE
+================================ */
+
+@media (max-width: 420px) {
+  .hero-section {
+    padding: 36px 5% 48px;
+  }
+
+  .hero-container {
+    gap: 30px;
+  }
+
+  .hero-title {
+    font-size: 44px;
+    letter-spacing: -2.2px;
+  }
+
+  .hero-actions {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .hero-btn-primary,
+  .hero-btn-secondary {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .hero-highlights {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .hero-image-wrapper {
+    height: 300px;
+    border-radius: 20px;
+  }
+
+  .hero-floating-card {
+    padding: 10px 12px;
+  }
+}
+
+/* ==============================
+   ACCESSIBILITY
+================================ */
+
+.hero-btn-primary:focus-visible,
+.hero-btn-secondary:focus-visible {
+  outline: 3px solid #f05a28;
+  outline-offset: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-image,
+  .hero-btn-primary,
+  .hero-btn-secondary,
+  .hero-btn-primary span {
+    transition: none;
+  }
+
+  .hero-image-wrapper:hover .hero-image {
+    transform: none;
+  }
+}

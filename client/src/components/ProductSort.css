@@ -1,0 +1,162 @@
+
+/* ==============================
+   PRODUCT SORT TOOLBAR
+============================== */
+
+.product-sort {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+
+  padding: 16px 20px;
+  margin-bottom: 22px;
+
+  background: #ffffff;
+  border: 1px solid #eaecf0;
+  border-radius: 14px;
+
+  box-shadow: 0 3px 12px rgba(16, 24, 40, 0.035);
+}
+
+/* ==============================
+   PRODUCT COUNT
+============================== */
+
+.product-sort-info {
+  display: flex;
+  align-items: center;
+}
+
+.product-sort-count {
+  color: #667085;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.product-sort-count strong {
+  color: #101828;
+  font-size: 17px;
+  font-weight: 850;
+  margin-right: 3px;
+}
+
+/* ==============================
+   SORT CONTROL
+============================== */
+
+.product-sort-control {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+.product-sort-control label {
+  color: #475467;
+  font-size: 13px;
+  font-weight: 650;
+  white-space: nowrap;
+}
+
+.product-sort-control select {
+  min-width: 190px;
+  height: 44px;
+  padding: 0 36px 0 13px;
+
+  background-color: #ffffff;
+  color: #101828;
+  border: 1px solid #d0d5dd;
+  border-radius: 9px;
+
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 650;
+
+  cursor: pointer;
+  outline: none;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.product-sort-control select:hover {
+  border-color: #98a2b3;
+}
+
+.product-sort-control select:focus-visible {
+  border-color: #f05a28;
+  box-shadow: 0 0 0 4px rgba(240, 90, 40, 0.12);
+}
+
+/* ==============================
+   RESPONSIVE DESIGN
+============================== */
+
+@media (max-width: 768px) {
+  .product-sort {
+    padding: 15px;
+    gap: 14px;
+    margin-bottom: 18px;
+  }
+
+  .product-sort-count {
+    font-size: 13px;
+  }
+
+  .product-sort-count strong {
+    font-size: 16px;
+  }
+
+  .product-sort-control {
+    gap: 8px;
+  }
+
+  .product-sort-control select {
+    min-width: 170px;
+    height: 42px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-sort {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 14px;
+    border-radius: 12px;
+  }
+
+  .product-sort-info {
+    justify-content: space-between;
+  }
+
+  .product-sort-control {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .product-sort-control label {
+    font-size: 12px;
+  }
+
+  .product-sort-control select {
+    flex: 1;
+    min-width: 0;
+    max-width: 75%;
+    height: 43px;
+  }
+}
+
+/* ==============================
+   REDUCED MOTION
+============================== */
+
+@media (prefers-reduced-motion: reduce) {
+  .product-sort-control select {
+    transition: none;
+  }
+}

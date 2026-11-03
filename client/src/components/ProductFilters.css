@@ -1,0 +1,241 @@
+
+/* ==============================
+   PRODUCT FILTERS
+============================== */
+
+.product-filters {
+  background: #ffffff;
+  border: 1px solid #eaecf0;
+  border-radius: 18px;
+  padding: 24px;
+  width: 100%;
+  height: fit-content;
+  box-shadow: 0 4px 16px rgba(16, 24, 40, 0.04);
+}
+
+/* ==============================
+   FILTER HEADER
+============================== */
+
+.filters-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding-bottom: 20px;
+  margin-bottom: 22px;
+  border-bottom: 1px solid #eaecf0;
+}
+
+.filters-eyebrow {
+  display: block;
+  color: #f05a28;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1.2px;
+  margin-bottom: 7px;
+}
+
+.filters-header h3 {
+  color: #101828;
+  font-size: 23px;
+  font-weight: 800;
+  letter-spacing: -0.6px;
+  margin: 0;
+}
+
+/* Reset Button */
+
+.filters-reset-button {
+  background: #fff4ef;
+  color: #d94718;
+  border: 1px solid #ffd5c5;
+  border-radius: 8px;
+  padding: 8px 13px;
+  font-size: 12px;
+  font-weight: 750;
+  cursor: pointer;
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.filters-reset-button:hover {
+  background: #ffe6db;
+  border-color: #f05a28;
+  transform: translateY(-1px);
+}
+
+.filters-reset-button:focus-visible {
+  outline: 3px solid rgba(240, 90, 40, 0.35);
+  outline-offset: 3px;
+}
+
+/* ==============================
+   FILTER GROUPS
+============================== */
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  margin-bottom: 23px;
+}
+
+.filter-group:last-child {
+  margin-bottom: 0;
+}
+
+.filter-group label {
+  color: #344054;
+  font-size: 13px;
+  font-weight: 750;
+}
+
+/* ==============================
+   SELECT & INPUT FIELDS
+============================== */
+
+.filter-group select,
+.filter-group input {
+  width: 100%;
+  min-width: 0;
+  height: 46px;
+  background: #ffffff;
+  color: #101828;
+  border: 1px solid #d0d5dd;
+  border-radius: 10px;
+  padding: 0 13px;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 500;
+  outline: none;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    background 0.2s ease;
+}
+
+.filter-group select {
+  cursor: pointer;
+}
+
+.filter-group input::placeholder {
+  color: #98a2b3;
+  font-weight: 400;
+}
+
+/* Focus State */
+
+.filter-group select:focus,
+.filter-group input:focus {
+  border-color: #f05a28;
+  box-shadow: 0 0 0 4px rgba(240, 90, 40, 0.12);
+}
+
+/* Hover State */
+
+.filter-group select:hover,
+.filter-group input:hover {
+  border-color: #98a2b3;
+}
+
+/* Keep focus clearly visible */
+
+.filter-group select:focus-visible,
+.filter-group input:focus-visible {
+  border-color: #f05a28;
+}
+
+/* Number Input */
+
+.filter-group input[type="number"] {
+  appearance: textfield;
+  -moz-appearance: textfield;
+}
+
+.filter-group input[type="number"]::-webkit-inner-spin-button,
+.filter-group input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* ==============================
+   RESPONSIVE DESIGN
+============================== */
+
+@media (max-width: 1024px) {
+  .product-filters {
+    padding: 20px;
+    border-radius: 15px;
+  }
+
+  .filters-header h3 {
+    font-size: 21px;
+  }
+}
+
+@media (max-width: 768px) {
+  .product-filters {
+    padding: 18px;
+  }
+
+  .filters-header {
+    padding-bottom: 15px;
+    margin-bottom: 18px;
+  }
+
+  .filter-group {
+    margin-bottom: 17px;
+  }
+
+  .filter-group select,
+  .filter-group input {
+    height: 44px;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-filters {
+    padding: 16px;
+    border-radius: 13px;
+  }
+
+  .filters-eyebrow {
+    font-size: 9px;
+  }
+
+  .filters-header h3 {
+    font-size: 20px;
+  }
+
+  .filters-reset-button {
+    padding: 8px 11px;
+  }
+
+  .filter-group label {
+    font-size: 12px;
+  }
+
+  .filter-group select,
+  .filter-group input {
+    font-size: 13px;
+  }
+}
+
+/* ==============================
+   REDUCED MOTION
+============================== */
+
+@media (prefers-reduced-motion: reduce) {
+  .filters-reset-button,
+  .filter-group select,
+  .filter-group input {
+    transition: none;
+  }
+
+  .filters-reset-button:hover {
+    transform: none;
+  }
+}

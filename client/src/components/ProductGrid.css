@@ -1,0 +1,131 @@
+
+/* ==============================
+   PRODUCT GRID
+============================== */
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(300px, minmax(0, 1fr));
+  gap: 24px;
+  width: 100%;
+  align-items: stretch;
+}
+
+/* ==============================
+   EMPTY PRODUCTS STATE
+============================== */
+
+.product-grid-empty {
+  width: 100%;
+  min-height: 340px;
+  padding: 48px 24px;
+  background: #ffffff;
+  border: 1px dashed #d0d5dd;
+  border-radius: 18px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.empty-icon {
+  width: 76px;
+  height: 76px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #fff1eb;
+  border: 1px solid #ffded0;
+  border-radius: 50%;
+
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.product-grid-empty h3 {
+  color: #101828;
+  font-size: 23px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  margin: 0 0 10px;
+}
+
+.product-grid-empty p {
+  max-width: 400px;
+  color: #667085;
+  font-size: 14px;
+  line-height: 1.8;
+  margin: 0;
+}
+
+/* ==============================
+   RESPONSIVE GRID
+============================== */
+
+/* Laptop / Smaller Desktop */
+
+@media (max-width: 1200px) {
+  .product-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+  }
+}
+
+/* Tablet */
+
+@media (max-width: 768px) {
+  .product-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+  }
+
+  .product-grid-empty {
+    min-height: 290px;
+    padding: 36px 20px;
+  }
+
+  .product-grid-empty h3 {
+    font-size: 21px;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 480px) {
+  .product-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .product-grid-empty {
+    min-height: 260px;
+    padding: 28px 16px;
+    border-radius: 14px;
+  }
+
+  .empty-icon {
+    width: 62px;
+    height: 62px;
+    font-size: 30px;
+    margin-bottom: 16px;
+  }
+
+  .product-grid-empty h3 {
+    font-size: 19px;
+  }
+
+  .product-grid-empty p {
+    font-size: 13px;
+  }
+}
+
+/* Small Mobile */
+
+@media (max-width: 340px) {
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+}
