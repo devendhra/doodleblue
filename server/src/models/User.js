@@ -1,4 +1,4 @@
-// User model - stores customer and admin accounts.
+// User model - stores customer accounts.
 // Passwords are never stored as plain text: they are hashed with
 // bcrypt before saving, and are excluded from query results by default.
 
@@ -25,8 +25,8 @@ const userSchema = new mongoose.Schema(
     },
     role: {
       type: String,
-      enum: ["user", "admin"], // regular customer or admin
-      default: "user",
+      enum: ["customer"], // every account is a customer
+      default: "customer",
     },
   },
   {

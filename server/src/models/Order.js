@@ -36,6 +36,16 @@ const shippingAddressSchema = new mongoose.Schema(
   { _id: false }
 );
 
+// All values an order's status can take. Exported so routes/validators
+// reuse the same list instead of duplicating the strings.
+export const ORDER_STATUSES = [
+  "pending",
+  "paid",
+  "shipped",
+  "delivered",
+  "cancelled",
+];
+
 const orderSchema = new mongoose.Schema(
   {
     // The customer who placed the order
@@ -55,7 +65,7 @@ const orderSchema = new mongoose.Schema(
     // Where the order is in its lifecycle
     status: {
       type: String,
-      enum: ["pending", "paid", "shipped", "delivered", "cancelled"],
+      enum: ORDER_STATUSES,
       default: "pending",
     },
     shippingAddress: shippingAddressSchema,

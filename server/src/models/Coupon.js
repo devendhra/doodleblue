@@ -22,6 +22,17 @@ const couponSchema = new mongoose.Schema(
   { timestamps: true } // adds createdAt and updatedAt
 );
 
+// Shared coupon check used by both the "validate coupon" endpoint and
+// the order controller. Returns the coupon document when it exists, is
+// active and is not expired - otherwise returns null.
+couponSchema.statics.findActive = function (code) {
+  return this.findOne({
+    code: String(code || "").trim().toUpperCase(),
+    active: true,
+    $or: [{ expiresAt: null }, { expiresAt: { $gt: new Date() } }],
+  });
+};
+
 const Coupon = mongoose.model("Coupon", couponSchema);
 
 export default Coupon;
