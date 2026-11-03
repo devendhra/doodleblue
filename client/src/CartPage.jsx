@@ -12,6 +12,15 @@ function readCart() {
   }
 }
 
+function SearchIcon() {
+  return (
+    <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" className="h-5 w-5 text-slate-500">
+      <circle cx="10.8" cy="10.8" r="6.3" stroke="currentColor" strokeWidth="1.8" />
+      <path d="m15.5 15.5 4 4" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" />
+    </svg>
+  )
+}
+
 function CartIcon() {
   return (
     <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" className="h-5 w-5">
@@ -155,6 +164,11 @@ function CartPage() {
             <span className="flex h-[34px] w-[34px] items-center justify-center rounded-[10px] bg-indigo-700 text-base font-bold">K</span>
             <span className="text-[21px] font-bold tracking-tight">Kadai<span className="text-orange-400">.</span></span>
           </a>
+          <div className="flex h-11 min-w-0 flex-1 items-center gap-3 rounded-[10px] bg-white px-4 text-sm text-slate-500">
+            <SearchIcon />
+            <span className="truncate">Search for products, brands and more</span>
+          </div>
+          <span className="hidden shrink-0 text-sm font-semibold sm:block">Products</span>
           <a href="/cart" aria-current="page" className="flex h-10 shrink-0 items-center gap-2 rounded-[10px] bg-slate-800 px-3 text-sm font-semibold">
             <CartIcon /><span>Cart</span>
             <span className="flex h-5 min-w-5 items-center justify-center rounded-full bg-orange-600 px-1 text-xs font-bold">{itemCount}</span>
