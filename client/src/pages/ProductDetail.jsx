@@ -38,8 +38,6 @@ function ProductDetail() {
     setImageIndex(0);
     setImageError(false);
     setQuantity(1);
-    window.scrollTo(0, 0);
-
     fetchProductById(id)
       .then((data) => {
         if (!alive) return;
