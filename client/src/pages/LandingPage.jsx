@@ -86,14 +86,7 @@ function LandingPage() {
                 </p>
               </div>
 
-              <button
-                type="button"
-                onClick={handleShopNow}
-                className="group inline-flex min-h-[48px] items-center justify-center gap-3 rounded-xl border border-gray-300 bg-white px-6 text-xs font-black uppercase tracking-wider text-gray-900 shadow-sm transition duration-150 hover:border-accent-600 hover:bg-accent-600 hover:text-white max-[480px]:w-full"
-              >
-                <span>View All Products</span>
-                <span aria-hidden="true" className="transition-transform duration-150 group-hover:translate-x-1">→</span>
-              </button>
+             
             </div>
 
             {loading && <Loader message="Loading elite gear..." />}
