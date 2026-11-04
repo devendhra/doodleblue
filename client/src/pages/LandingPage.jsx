@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
 import { getProducts } from "../redux/productsSlice";
 
@@ -14,9 +14,15 @@ import Loader from "../components/Loader";
 
 function LandingPage() {
   const dispatch = useDispatch();
+  const location = useLocation();
   const navigate = useNavigate();
+  
 
   const { products, loading, error } = useSelector((state) => state.products);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
 
   useEffect(() => {
     dispatch(
