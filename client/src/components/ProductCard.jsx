@@ -63,7 +63,7 @@ function ProductCard({ product, onAddToCart }) {
     <article className="group flex h-full flex-col overflow-hidden rounded-3xl border border-gray-200/90 bg-white transition-all duration-300 ease-out hover:-translate-y-1.5 hover:border-accent-600/50 hover:shadow-2xl shadow-sm">
       {/* Product Image Box */}
       <div
-        className="relative aspect-[4/3] w-full cursor-pointer overflow-hidden bg-gray-50 flex items-center justify-center p-6"
+        className="relative aspect-square w-full cursor-pointer overflow-hidden bg-gray-50 flex items-center justify-center"
         onClick={handleViewProduct}
         role="button"
         tabIndex={0}
@@ -80,7 +80,7 @@ function ProductCard({ product, onAddToCart }) {
           <img
             src={productImage}
             alt={productName}
-            className="max-h-full max-w-full object-contain transition-transform duration-500 ease-out group-hover:scale-105"
+            className="h-full w-full object-cover transition-transform duration-500 ease-out group-hover:scale-105"
             loading="lazy"
             onError={() => setImageError(true)}
           />
