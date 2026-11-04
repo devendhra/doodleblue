@@ -1,26 +1,281 @@
 {
   "products": [
+  
     {
-      "title": "SG Cricket Bat - English Willow",
-      "description": "Full-size English willow cricket bat with a mid sweet spot. Great balance for club matches and net practice.",
-      "category": "cricket",
-      "brand": "SG",
-      "price": 9999,
-      "discountPercentage": 15,
-      "rating": 4.6,
-      "ratingCount": 128,
-      "stock": 10,
-      "tags": ["bat", "willow", "match"],
-      "thumbnail": "https://images.unsplash.com/photo-1593341646782-e0b495cffc6d?auto=format&fit=crop&w=800&q=80",
+      "title": "MOVEX Morex Carbon Graphite Badminton Racket With Full Cover Bag",
+      "description": "The Morex Carbon Graphite Badminton Racket with Full Cover Bag is the perfect blend of power, precision, and durability, making it an ideal choice for both beginners and advanced players looking to elevate their game",
+      "category": "badminton",
+      "brand": "MOVEX",
+      "price": 2999,
+      "discountPercentage": 10,
+      "rating": 4.5,
+      "ratingCount": 89,
+      "stock": 14,
+      "tags": ["badminton", "racket", "smash"],
+      "thumbnail": "https://rukminim1.flixcart.com/image/1536/1536/xif0q/racquet/w/k/f/g4-3-25-inches-strung-morex-carbon-graphite-badminton-racket-original-imahzbkerajjgrvr.jpeg?q=90",
       "images": [
-        "https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1531415074968-036ba1b575da?auto=format&fit=crop&w=800&q=80",
-        "https://images.unsplash.com/photo-1589801844976-b328a6fcf4a3?auto=format&fit=crop&w=800&q=80"
+        "https://rukminim1.flixcart.com/image/1536/1536/xif0q/racquet/i/s/7/g4-3-25-inches-strung-morex-carbon-graphite-badminton-racket-original-imahz9s9rczyhpwv.jpeg?q=90",
+        "https://rukminim1.flixcart.com/image/1536/1536/xif0q/racquet/z/d/f/g4-3-25-inches-strung-morex-carbon-graphite-badminton-racket-original-imahz9s9gbbyakzj.jpeg?q=90",
+        "https://rukminim1.flixcart.com/image/1536/1536/xif0q/racquet/o/y/8/g4-3-25-inches-strung-morex-carbon-graphite-badminton-racket-original-imahz9s9hysavkzc.jpeg?q=90"
       ],
-      "specifications": { "Weight": "1.2 kg", "Willow": "English willow", "Size": "Full size (SH)", "Grip": "Rubber chevron" },
+      "specifications": { "Weight": "85g", "Flex": "Medium", "String Tension": "24 lbs" },
       "returnPolicy": "7-day easy returns",
-      "warrantyInformation": "6 months against manufacturing defects"
-    }
-    ]
-      }
+      "warrantyInformation": "3 months frame warranty"
+    },
+    {
+      "title": "Maxbolt PREDATOR Red Unstrung Badminton Racquet ",
+      "description": "Durable graphite construction designed for explosive power and fast defensive racket handling.",
+      "category": "badminton",
+      "brand": "Maxbolt",
+      "price": 3999,
+      "discountPercentage": 10,
+      "rating": 4.5,
+      "ratingCount": 89,
+      "stock": 14,
+      "tags": ["badminton", "racket", "smash"],
+      "thumbnail": "https://rukminim1.flixcart.com/image/1536/1536/xif0q/racquet/l/7/r/g4-3-25-inches-unstrung-predator-1-879876567-84-badminton-original-imahrurn9wdzmwza.jpeg?q=90",
+      "images": [
+        "https://rukminim1.flixcart.com/image/1536/1536/xif0q/racquet/0/6/8/g4-3-25-inches-unstrung-predator-1-879876567-84-badminton-original-imahrurnf7fpzyen.jpeg?q=90",
+        "https://rukminim1.flixcart.com/image/1536/1536/xif0q/racquet/g/6/v/g4-3-25-inches-unstrung-predator-1-879876567-84-badminton-original-imahrurn9xzucvty.jpeg?q=90",
+        "https://rukminim1.flixcart.com/image/1536/1536/xif0q/racquet/z/o/b/g4-3-25-inches-unstrung-predator-1-879876567-84-badminton-original-imahrurn8nhvjnap.jpeg?q=90"
+      ],
+      "specifications": { "Weight": "85g", "Flex": "Medium", "String Tension": "24 lbs" },
+      "returnPolicy": "7-day easy returns",
+      "warrantyInformation": "3 months frame warranty"
+    },
+    {
+      "title": "YONEX Mavis 350 Green Cap Nylon Shuttle ",
+      "description": "Yonex Mavis 350 Shuttles is a Superior Quality Nylon Shuttlecocks designed for recreational and club level play, offering consistent flight and durability.",
+      "category": "badminton",
+      "brand": "Yonex",
+      "price": 4999,
+      "discountPercentage": 10,
+      "rating": 4.5,
+      "ratingCount": 89,
+      "stock": 14,
+      "tags": ["badminton", "shuttle", "nylon"],
+      "thumbnail": "https://rukminim1.flixcart.com/image/1536/1536/xif0q/shuttle/o/c/m/mavis-350-green-cap-6-75-nylon-yonex-slow-resized-original-imag56cggqswhgeq.jpeg?q=90",
+      "images": [
+        "https://rukminim1.flixcart.com/image/1536/1536/krdtlzk0/shuttle/v/5/w/mavis-350-green-cap-6-75-nylon-yonex-slow-original-imag56cgeefffbg9.jpeg?q=90",
+        "https://rukminim1.flixcart.com/image/1536/1536/krdtlzk0/shuttle/y/l/y/mavis-350-green-cap-6-75-nylon-yonex-slow-original-imag56cgvs9rfbnr.jpeg?q=90",
+        "https://rukminim1.flixcart.com/image/1536/1536/krdtlzk0/shuttle/g/c/r/mavis-350-green-cap-6-75-nylon-yonex-slow-original-imag56cg6cu2xana.jpeg?q=90"
+      ],
+      "specifications": { "Weight": "85g", "Flex": "Medium", "String Tension": "24 lbs" },
+      "returnPolicy": "7-day easy returns",
+      "warrantyInformation": "3 months frame warranty"
+    },
+    {
+      "title": "TIRO COMPETITION BALL",
+      "description": "Thermally bonded seamless surface for a more predictable trajectory and lower water uptake.",
+      "category": "football",
+      "brand": "Adidas",
+      "price": 2499,
+      "discountPercentage": 20,
+      "rating": 4.7,
+      "ratingCount": 210,
+      "stock": 25,
+      "tags": ["football", "match", "ball"],
+      "thumbnail": "https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/e37e19c5c927411a8bf973bf5265017e_9366/TIRO_COMPETITION_BALL_White_JW1534_01_00_standard.jpg",
+      "images": [
+        "https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/7983f4cb136d4386bf0178c71452b4ee_9366/TIRO_COMPETITION_BALL_White_JW1534_02_standard_hover.jpg",
+        "https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/76c5198a57484d8dbf9652b19fe40a18_9366/TIRO_COMPETITION_BALL_White_JW1534_41_detail.jpg",
+        "https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/cde76ef871304be68dbfb3d498987217_9366/TIRO_COMPETITION_BALL_White_JW1534_42_detail.jpg"
+      ],
+      "specifications": { "Size": "5", "Material": "PU casing", "Bladder": "Butyl" },
+      "returnPolicy": "7-day easy returns",
+      "warrantyInformation": "1 year shape retention warranty"
+    },
+    {
+      "title": "Predator League Firm Ground Football Boots",
+      "description": "Football boots with Nanostrike+ mesh for precision strikes and a lightweight feel.",
+      "category": "football",
+      "brand": "Adidas",
+      "price": 4499,
+      "discountPercentage": 20,
+      "rating": 4.7,
+      "ratingCount": 210,
+      "stock": 25,
+      "tags": ["football", "match", "boots"],
+      "thumbnail": "https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/5fc46b63466340d0b9fa3307cb1a7b1a_9366/Predator_League_Firm_Ground_Football_Boots_White_IH7154_HM1.jpg",
+      "images": [
+        "https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/24a10136b07844d098578103cea7fbee_faec/Predator_League_Firm_Ground_Football_Boots_White_IH7154_HM3_hover.tiff.jpg",
+        "https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/f0bb5dda96e947a3b853de6a59f8c2b1_9366/Predator_League_Firm_Ground_Football_Boots_White_IH7154_HM4_hover.jpg",
+        "https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/c1f85bea14884a8a9a686b3c87da87fb_9366/Predator_League_Firm_Ground_Football_Boots_White_IH7154_HM5.jpg"
+      ],
+      "specifications": { "Size": "5", "Material": "PU casing", "Bladder": "Butyl" },
+      "returnPolicy": "7-day easy returns",
+      "warrantyInformation": "1 year shape retention warranty"
+    },
     
+    {
+      "title": "NIVIA Street Art, 8 Panels, Rubberized Moulded",
+      "description": "High quality, superiorly made for playing both indoor and outdoor",
+      "category": "basketball",
+      "brand": "NIVIA",
+      "price": 1999,
+      "discountPercentage": 5,
+      "rating": 4.8,
+      "ratingCount": 312,
+      "stock": 8,
+      "tags": ["basketball", "nba", "court"],
+      "thumbnail": "https://rukminim1.flixcart.com/image/1536/1536/xif0q/ball/y/z/r/500-600-street-art-5-22-1-bb-1961-basketball-nivia-enriched-transparent-original-imahgj7vppps4hbe.png?q=90",
+      "images": [
+        "https://rukminim1.flixcart.com/image/1536/1536/xif0q/ball/t/y/r/500-600-street-art-5-22-1-bb-1961-basketball-nivia-original-imahgj7vggbyuhs4.jpeg?q=90",
+        "https://rukminim1.flixcart.com/image/1536/1536/xif0q/ball/q/x/e/500-600-street-art-5-22-1-bb-1961-basketball-nivia-original-imahgj7vd86hpcq5.jpeg?q=90",
+        "https://rukminim1.flixcart.com/image/1536/1536/xif0q/ball/u/l/r/450-550-street-art-3-20-1-bb-1960-basketball-nivia-original-imahgj7vcpahnzgk.jpeg?q=90"
+      ],
+      "specifications": { "Size": "7", "Cover": "Composite leather", "Use": "Indoor" },
+      "returnPolicy": "7-day easy returns",
+      "warrantyInformation": "6 months warranty"
+    },
+    
+    {
+      "title": "NIKE Official FIFA World Cup Korea Jersey ",
+      "description": "Nike presents: Korea's 2026 Home jersey. The head-to-toe camo print embodies an ambush of tigers striking together at any moment.",
+      "category": "fitness",
+      "brand": "NIKE",
+      "price": 1999,
+      "discountPercentage": 15,
+      "rating": 4.5,
+      "ratingCount": 115,
+      "stock": 22,
+      "tags": ["apparel", "compression", "jersey"],
+      "thumbnail": "https://rukminim1.flixcart.com/image/1536/1536/xif0q/t-shirt/7/2/1/-original-imahpvyww63yx4gx.jpeg?q=90",
+      "images": [
+        "https://rukminim1.flixcart.com/image/1536/1536/xif0q/t-shirt/g/s/x/m-ib5328-679-nike-original-imahhpre8ggpazfb.jpeg?q=90",
+        "https://rukminim1.flixcart.com/image/1536/1536/xif0q/t-shirt/b/l/p/m-ib5328-679-nike-original-imahhprefmcpwsa3.jpeg?q=90",
+        "https://rukminim1.flixcart.com/image/1536/1536/xif0q/t-shirt/v/c/f/m-ib5328-679-nike-original-imahhprejn6fdnuu.jpeg?q=90"
+      ],
+      "specifications": { "Material": "84% Polyester, 16% Elastane", "Fit": "Compression", "Tech": "Moisture Transport" },
+      "returnPolicy": "7-day easy returns",
+      "warrantyInformation": "30-day satisfaction guarantee"
+    },
+    {
+      "title": "ADIDAS Printed Men Black Sports Shorts",
+      "description": "ADIDAS presents: Black sports shorts for men. The head-to-toe camo print embodies an ambush of tigers striking together at any moment.",
+      "category": "fitness",
+      "brand": "ADIDAS",
+      "price": 1699,
+      "discountPercentage": 10,
+      "rating": 4.8,
+      "ratingCount": 115,
+      "stock": 12,
+      "tags": ["apparel", "compression", "shorts"],
+      "thumbnail": "https://rukminim1.flixcart.com/image/1536/1536/xif0q/short/c/j/o/m-il6590-adidas-original-imagsgz7h3bzwjrs.jpeg?q=90",
+      "images": [
+        "https://rukminim1.flixcart.com/image/1536/1536/xif0q/short/3/1/l/m-il6590-adidas-original-imagsgz7jurheemy.jpeg?q=90",
+        "https://rukminim1.flixcart.com/image/1536/1536/xif0q/short/b/d/h/m-il6590-adidas-original-imagsgz7emrjh2rz.jpeg?q=90",
+        "https://rukminim1.flixcart.com/image/1536/1536/xif0q/short/d/0/o/m-il6590-adidas-original-imagsgz7ur9huza9.jpeg?q=90"
+      ],
+      "specifications": { "Material": "84% Polyester, 16% Elastane", "Fit": "Compression", "Tech": "Moisture Transport" },
+      "returnPolicy": "7-day easy returns",
+      "warrantyInformation": "30-day satisfaction guarantee"
+    },
+    {
+      "title": "Head Geo Speed Multicolor Strung Tennis Racquet",
+      "description": "HEAD Geo Speed tennis racket is an ideal choice for a wide age range of recreational players including beginners.",
+      "category": "tennis",
+      "brand": "Head",
+      "price": 4999,
+      "discountPercentage": 11,
+      "rating": 4.4,
+      "ratingCount": 142,
+      "stock": 13,
+      "tags": ["tennis", "racket", "court"],
+      "thumbnail": "https://rukminim1.flixcart.com/image/1536/1536/xif0q/racquet/i/4/r/g3-11-11-cm-strung-geo-speed-27-5-inch-1-1102899-295-tennis-resized-original-imagrk77g2abnfgt.jpeg?q=90",
+      "images": [
+        "https://rukminim1.flixcart.com/image/1536/1536/xif0q/racquet/d/f/i/g3-11-11-cm-strung-geo-speed-27-5-inch-1-1102899-295-tennis-original-imagrk773pcp9arh.jpeg?q=90",
+        "https://rukminim1.flixcart.com/image/1536/1536/xif0q/racquet/6/q/y/g3-11-11-cm-strung-geo-speed-27-5-inch-1-1102899-295-tennis-original-imagrk77qpwhuyxf.jpeg?q=90",
+        "https://rukminim1.flixcart.com/image/1536/1536/xif0q/racquet/l/r/e/g3-11-11-cm-strung-geo-speed-27-5-inch-1-1102899-295-tennis-original-imagrk77j34zevj5.jpeg?q=90"
+      ],
+      "specifications": { "Head Size": "105 sq in", "Weight": "275g", "String Pattern": "16x19" },
+      "returnPolicy": "7-day easy returns",
+      "warrantyInformation": "1 year frame warranty"
+    },
+    {
+      "title": "Head RADICAL Junior Aluminium- Orange Strung",
+      "description": "HEAD RADICAL Junior tennis racket is an ideal choice for a wide age range of recreational players including beginners.",
+      "category": "tennis",
+      "brand": "Head",
+      "price": 3999,
+      "discountPercentage": 10,
+      "rating": 4.4,
+      "ratingCount": 142,
+      "stock": 7,
+      "tags": ["tennis", "racket", "court"],
+      "thumbnail": "https://rukminim1.flixcart.com/image/1536/1536/xif0q/racquet/m/i/0/g1-4-1-8-inches-strung-radical-junior-26-1-radicaljr26str-w-cv-4-original-imah4hye37b4vjg6.jpeg?q=90",
+      "images": [
+        "https://rukminim1.flixcart.com/image/1536/1536/xif0q/racquet/s/z/p/g1-4-1-8-inches-strung-radical-junior-26-1-radicaljr26str-w-cv-4-original-imah4hyezznzyysf.jpeg?q=90",
+        "https://rukminim1.flixcart.com/image/1536/1536/xif0q/racquet/o/v/f/g1-4-1-8-inches-strung-radical-junior-26-1-radicaljr26str-w-cv-4-original-imah4hyeqmeqzkzz.jpeg?q=90",
+        "https://rukminim1.flixcart.com/image/1536/1536/xif0q/racquet/q/b/1/g1-4-1-8-inches-strung-radical-junior-26-1-radicaljr26str-w-cv-4-original-imah4hye2rwhztpv.jpeg?q=90"
+      ],
+      "specifications": { "Head Size": "105 sq in", "Weight": "275g", "String Pattern": "16x19" },
+      "returnPolicy": "7-day easy returns",
+      "warrantyInformation": "1 year frame warranty"
+    },
+    {
+      "title": "alyv Sports Wrist Sweatband for Men & Women",
+      "description": "Stay comfortable and focused during workouts with the ALYV Sports Wrist Sweatband. Made from soft cotton terry fabric, it effectively absorbs sweat and helps keep your hands dry during exercise and sports activities",
+      "category": "running",
+      "brand": "alyv",
+      "price": 399,
+      "discountPercentage": 5,
+      "rating": 4.9,
+      "ratingCount": 260,
+      "stock": 11,
+      "tags": ["wristband", "sports", "workout"],
+      "thumbnail": "https://rukminim1.flixcart.com/image/1536/1536/xif0q/support/8/e/0/both-sports-wrist-sweatband-for-men-women-white-black-pack-of-4-original-imahzk6gbngnmh3j.jpeg?q=90",
+      "images": [
+        "https://rukminim1.flixcart.com/image/1536/1536/xif0q/support/y/z/p/both-sports-wrist-sweatband-for-men-women-white-black-pack-of-4-original-imahzk6keesqskad.jpeg?q=90",
+        "https://rukminim1.flixcart.com/image/1536/1536/xif0q/support/5/w/p/both-sports-wrist-sweatband-white-pack-of-2-free-size-8-alyv-original-imahzk5bv9z3ufyb.jpeg?q=90",
+        "https://rukminim1.flixcart.com/image/1536/1536/xif0q/support/j/w/0/both-sports-wrist-sweatband-for-men-women-white-black-pack-of-4-original-imahzpu399s3zrjz.jpeg?q=90"
+      ],
+      "specifications": { "Cushioning": "FF BLAST PLUS ECO", "Support": "Stability", "Drop": "10mm" },
+      "returnPolicy": "7-day easy returns",
+      "warrantyInformation": "1 year manufacturer warranty"
+    },
+    {
+      "title": "FabHunk Athletic Running Men & Women Fitness Headband",
+      "description": "The Men's Headband - Running Sweat Head Bands for Sports - Athletic Sweatbands Head Band is a comfortable and functional accessory designed for athletes and fitness enthusiasts.",
+      "category": "running",
+      "brand": "FabHunk",
+      "price": 299,
+      "discountPercentage": 10,
+      "rating": 4.9,
+      "ratingCount": 260,
+      "stock": 11,
+      "tags": ["headband", "sports", "workout"],
+      "thumbnail": "https://rukminim1.flixcart.com/image/1536/1536/xif0q/fitness-band/j/b/f/athletic-running-men-women-fitness-headband-great-for-all-sports-original-imahg4puyzd2mczg.jpeg?q=90",
+      "images": [
+        "https://rukminim1.flixcart.com/image/1536/1536/xif0q/fitness-band/m/g/5/-original-imahjzw6hznpkqjg.jpeg?q=90",
+        "https://rukminim1.flixcart.com/image/1536/1536/xif0q/fitness-band/w/b/z/-original-imahjzw6gy4meety.jpeg?q=90",
+        "https://rukminim1.flixcart.com/image/1536/1536/xif0q/fitness-band/e/h/4/athletic-running-men-women-fitness-headband-great-for-all-sports-original-imahg4puyjfe2bj7.jpeg?q=90"
+      ],
+      "specifications": { "Cushioning": "FF BLAST PLUS ECO", "Support": "Stability", "Drop": "10mm" },
+      "returnPolicy": "7-day easy returns",
+      "warrantyInformation": "1 year manufacturer warranty"
+    },
+    {
+      "title": "Sekyo Flex Pro Fitness and Health Tracker With ECG, Heart Rate, Sleep, Blood Oxygen",
+      "description": "This replacement nylon strap is designed for comfort and durability, featuring a breathable woven fabric and a secure hook-and-loop closure system.",
+      "category": "running",
+      "brand": "Sekyo",
+      "price": 7999,
+      "discountPercentage": 15,
+      "rating": 4.5,
+      "ratingCount": 160,
+      "stock": 11,
+      "tags": ["fitness", "sports", "workout"],
+      "thumbnail": "https://rukminim1.flixcart.com/image/1536/1536/xif0q/smart-band-tag/m/7/l/-original-imahs3hx6czz3hkb.jpeg?q=90",
+      "images": [
+        "https://rukminim1.flixcart.com/image/1536/1536/xif0q/smart-band-tag/l/a/8/-original-imahs3hxnmer7wmv.jpeg?q=90",
+        "https://rukminim1.flixcart.com/image/1536/1536/xif0q/smart-band-tag/1/d/t/-original-imahs3hxffmzzrdd.jpeg?q=90",
+        "https://rukminim1.flixcart.com/image/1536/1536/xif0q/smart-band-tag/c/i/n/-original-imahs3hx22fppwh9.jpeg?q=90"
+      ],
+      "specifications": { "Cushioning": "FF BLAST PLUS ECO", "Support": "Stability", "Drop": "10mm" },
+      "returnPolicy": "7-day easy returns",
+      "warrantyInformation": "1 year manufacturer warranty"
+    }
+   
+  ]
+}

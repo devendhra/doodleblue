@@ -55,7 +55,17 @@ function ProductDetail() {
       .finally(() => alive && setLoading(false));
 
     fetchRelatedProducts(id)
-      .then((data) => alive && setRelated(data.products || []))
+      .then((data) => {
+        if (!alive) return;
+        const products = Array.isArray(data) ? data : data?.products;
+        setRelated(
+          Array.isArray(products)
+            ? products.filter(
+                (item) => String(item.id || item._id) !== String(id)
+              )
+            : []
+        );
+      })
       .catch(() => {});
 
     return () => {
