@@ -379,7 +379,7 @@ function CartPage() {
                 </div>
               )}
 
-              {!coupon && availableCoupons.length > 0 && (
+              {availableCoupons.length > 0 && (
                 <div className="mt-4">
                   <p className="m-0 mb-2 text-[10px] font-black uppercase tracking-widest text-gray-400">
                     Available Coupons
