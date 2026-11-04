@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 // image (`auth-bg.jpg`) directly from the project's public folder.
 
 const PERKS = [
-  "⚡ Free shipping on orders over ₹4,400",
+  "⚡ Free shipping on orders over ₹499",
   "🛡️ Easy 7-day hassle-free returns",
   "⭐ Trusted by 50k+ elite athletes",
 ];

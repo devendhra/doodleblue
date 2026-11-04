@@ -167,9 +167,9 @@ function CartPage() {
     items.reduce((sum, item) => sum + unitPrice(item) * item.quantity, 0)
   );
   const discount = round2((subtotal * (coupon?.percentOff ?? 0)) / 100);
-  const shipping = subtotal === 0 || subtotal >= 4400 ? 0 : 439;
+  const shipping = subtotal === 0 || subtotal >= 499 ? 0 : 49;
   const total = round2(subtotal - discount + shipping);
-  const freeShippingRemaining = Math.max(0, round2(4400 - subtotal));
+  const freeShippingRemaining = Math.max(0, round2(499 - subtotal));
 
   if (!isLoggedIn) {
     return (
