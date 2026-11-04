@@ -1,5 +1,6 @@
 
-import { Routes, Route, Navigate } from "react-router-dom";
+import { useLayoutEffect } from "react";
+import { Routes, Route, Navigate, useLocation } from "react-router-dom";
 
 import LandingPage from "./pages/LandingPage";
 import ProductsPage from "./pages/ProductsPage";
@@ -9,30 +10,43 @@ import Orders from "./pages/Orders";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 
+function ScrollToTop() {
+  const { pathname, search } = useLocation();
+
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname, search]);
+
+  return null;
+}
+
 function App() {
   return (
-    <Routes>
-      {/* Landing Page */}
-      <Route path="/" element={<LandingPage />} />
+    <>
+      <ScrollToTop />
+      <Routes>
+        {/* Landing Page */}
+        <Route path="/" element={<LandingPage />} />
 
-      {/* Products Page */}
-      <Route path="/products" element={<ProductsPage />} />
+        {/* Products Page */}
+        <Route path="/products" element={<ProductsPage />} />
 
-      {/* Single product page */}
-      <Route path="/product/:id" element={<ProductDetail />} />
+        {/* Single product page */}
+        <Route path="/product/:id" element={<ProductDetail />} />
 
-      <Route path="/cart" element={<CartPage />} />
+        <Route path="/cart" element={<CartPage />} />
 
-      {/* Order history */}
-      <Route path="/orders" element={<Orders />} />
+        {/* Order history */}
+        <Route path="/orders" element={<Orders />} />
 
-      {/* Auth pages */}
-      <Route path="/login" element={<Login />} />
-      <Route path="/signup" element={<Signup />} />
+        {/* Auth pages */}
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
 
-      {/* Unknown routes */}
-      <Route path="*" element={<Navigate to="/" replace />} />
-    </Routes>
+        {/* Unknown routes */}
+        <Route path="*" element={<Navigate to="/" replace />} />
+      </Routes>
+    </>
   );
 }
 
