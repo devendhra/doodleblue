@@ -57,13 +57,7 @@ function CategorySection() {
             </p>
           </div>
 
-          <Link
-            to="/products"
-            className="group inline-flex items-center gap-2.5 whitespace-nowrap rounded-xl border border-gray-300 bg-white px-5 py-3 text-xs font-black uppercase tracking-wider text-gray-900 no-underline shadow-sm transition duration-150 ease-out hover:border-accent-600 hover:bg-accent-600 hover:text-white"
-          >
-            <span>View All Products</span>
-            <span aria-hidden="true" className="transition-transform duration-150 group-hover:translate-x-1">→</span>
-          </Link>
+          
         </div>
 
         {/* Category Cards Grid */}
