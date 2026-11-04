@@ -171,7 +171,7 @@ function ProductDetail() {
                 <span className="text-accent-600 font-black">{product.title}</span>
               </nav>
 
-              <div className="grid items-start gap-10 lg:grid-cols-2 lg:gap-14">
+              <div className="grid items-start gap-10 lg:grid-cols-[1.2fr_0.8fr] lg:gap-14">
                 {/* Gallery */}
                 <div>
                   <div className="relative flex aspect-square w-full items-center justify-center overflow-hidden rounded-3xl border border-gray-200 bg-white shadow-xl">
@@ -179,7 +179,7 @@ function ProductDetail() {
                       <img
                         src={images[imageIndex]}
                         alt={product.title}
-                        className="h-full w-full object-contain p-8"
+                        className="h-full w-full object-contain p-4"
                       />
                     ) : (
                       <div className="flex h-full w-full flex-col items-center justify-center gap-2 bg-gray-100 text-gray-400">
