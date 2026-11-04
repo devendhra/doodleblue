@@ -127,7 +127,7 @@ function ProductsPage() {
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-[400px] w-[400px] rounded-full bg-accent-600/20 blur-[100px] pointer-events-none" />
 
           <div className="relative z-[1] mx-auto max-w-[800px]">
-            <span className="mb-4 inline-flex items-center gap-2 rounded-full border border-accent-500/40 bg-accent-500/10 px-4 py-2 text-xs font-black uppercase tracking-widest text-accent-400">
+            <span className="mb-4 inline-flex items-center gap-2 rounded-full border border-accent-500/40 bg-accent-500/10 px-4 py-2 text-xs font-black uppercase tracking-widest text-white">
               ⚡ PROFESSIONAL CATALOG
             </span>
             <h1 className="m-0 font-heading text-4xl font-black tracking-tight text-white sm:text-5xl lg:text-6xl">

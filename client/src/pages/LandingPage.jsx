@@ -11,7 +11,7 @@ import CategorySection from "../components/CategorySection";
 import ProductGrid from "../components/ProductGrid";
 import Loader from "../components/Loader";
 
-const FEATURED_CATEGORIES = ["training", "basketball", "tennis", "volleyball"];
+const FEATURED_CATEGORIES = ["cricket", "basketball", "swimming", "football"];
 function LandingPage() {
   const navigate = useNavigate();
   const [featuredProducts, setFeaturedProducts] = useState([]);
