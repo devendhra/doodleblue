@@ -151,7 +151,7 @@ function ProductsPage() {
 
           <div className="grid items-start gap-8 lg:grid-cols-[280px_minmax(0,1fr)]">
             {/* Filters Sidebar */}
-            <aside className="w-full self-start lg:sticky lg:top-[104px] lg:max-h-[calc(100vh-120px)] lg:overflow-y-auto">
+            <aside className="w-full self-start lg:sticky lg:top-[104px]">
               <ProductFilters
                 categories={categories}
                 filters={filters}
