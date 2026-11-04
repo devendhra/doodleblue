@@ -10,7 +10,7 @@ function ProductFilters({ categories = [], filters, onFilterChange, onReset }) {
   };
 
   return (
-    <aside className="h-fit w-full rounded-3xl border border-gray-200/80 bg-white p-6 shadow-xl">
+    <aside className="h-fit w-full rounded-3xl border border-gray-200/80 bg-white p-6 shadow-md">
       <div className="mb-6 flex items-center justify-between border-b border-gray-200 pb-4">
         <div>
           <span className="text-[10px] font-black tracking-widest text-accent-600 uppercase">

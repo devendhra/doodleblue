@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
 import { fetchProducts } from "../services/api";
 
@@ -13,10 +13,16 @@ import Loader from "../components/Loader";
 
 const FEATURED_CATEGORIES = ["cricket", "basketball", "swimming", "football"];
 function LandingPage() {
+  const location = useLocation();
   const navigate = useNavigate();
+  
   const [featuredProducts, setFeaturedProducts] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
 
   useEffect(() => {
     loadFeaturedProducts();
