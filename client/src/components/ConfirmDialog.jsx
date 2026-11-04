@@ -52,12 +52,12 @@ function ConfirmDialog({
         <div className="mt-3 text-sm leading-relaxed text-gray-600 font-medium">
           {children}
         </div>
-        <div className="mt-7 flex flex-col-reverse gap-3 sm:flex-row sm:justify-end">
+        <div className="mt-7 flex flex-col-reverse gap-3 sm:flex-row sm:justify-center">
           <button
             type="button"
             onClick={onClose}
             disabled={busy}
-            className="min-h-[48px] rounded-2xl border border-gray-300 bg-white px-6 text-xs font-black uppercase tracking-wider text-gray-700 transition hover:bg-gray-50 disabled:opacity-50"
+            className="min-h-[48px] w-full rounded-2xl border border-gray-300 bg-white px-6 text-xs font-black uppercase tracking-wider text-gray-700 transition hover:bg-gray-50 disabled:opacity-50 sm:w-48"
           >
             {cancelText}
           </button>
@@ -65,8 +65,8 @@ function ConfirmDialog({
             type="button"
             onClick={onConfirm}
             disabled={busy}
-            className={`min-h-[48px] rounded-2xl px-6 text-xs font-black uppercase tracking-wider text-white shadow-md transition hover:brightness-110 disabled:opacity-50 ${
-              danger ? "bg-danger-600 shadow-danger-600/30" : "bg-accent-600 shadow-accent-600/30"
+            className={`min-h-[48px] w-full rounded-2xl px-6 text-xs font-black uppercase tracking-wider text-white shadow-md transition hover:brightness-110 disabled:opacity-50 sm:w-48 ${
+              danger ? "bg-danger-700 shadow-danger-700/30" : "bg-accent-600 shadow-accent-600/30"
             }`}
           >
             {busy ? "Please wait..." : confirmText}

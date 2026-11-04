@@ -253,7 +253,6 @@ function Orders() {
         title="Cancel This Order?"
         confirmText="Yes, Cancel Order"
         cancelText="Keep Order"
-        danger
         busy={cancelBusy}
         onConfirm={cancelOrder}
         onClose={() => setCancelTarget(null)}
