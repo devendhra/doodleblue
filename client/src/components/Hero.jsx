@@ -57,12 +57,9 @@ function Hero() {
               <span aria-hidden="true" className="text-lg transition-transform duration-200 group-hover:translate-x-1">→</span>
             </Link>
 
-            <Link
-              to="/products?category=fitness"
-              className="inline-flex min-h-[56px] items-center justify-center rounded-2xl border-2 border-gray-300 bg-white px-8 text-sm font-black uppercase tracking-wider text-gray-900 no-underline transition duration-200 ease-out hover:-translate-y-1 hover:border-gray-900 hover:bg-gray-50"
-            >
+            <span className="inline-flex min-h-[56px] items-center justify-center rounded-2xl border-2 border-gray-300 bg-white px-8 text-sm font-black uppercase tracking-wider text-gray-900">
               Explore Fitness
-            </Link>
+            </span>
           </div>
 
           <div className="mt-10 grid grid-cols-2 gap-4 sm:grid-cols-3 pt-8 border-t border-gray-200/80">
