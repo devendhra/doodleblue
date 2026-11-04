@@ -134,7 +134,7 @@ function ProductCard({ product, onAddToCart }) {
             {stock <= 0 ? (
               <span className="text-danger-700 bg-danger-50 px-2.5 py-1 rounded-full border border-danger-200">Sold Out</span>
             ) : stock < 10 ? (
-              <span className="text-warning-800 bg-warning-50 px-2.5 py-1 rounded-full border border-warning-200">Only {stock} Left</span>
+              <span className="text-danger-700 bg-danger-50 px-2.5 py-1 rounded-full border border-danger-200">Only {stock} Left</span>
             ) : (
               <span className="text-success-700 bg-success-50 px-2.5 py-1 rounded-full border border-success-200">In Stock</span>
             )}
