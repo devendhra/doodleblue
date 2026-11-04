@@ -8,6 +8,8 @@
   html {
     scroll-behavior: smooth;
     scroll-padding-top: 90px;
+    overflow-x: clip;
+    overscroll-behavior-y: none;
   }
 
   body {
