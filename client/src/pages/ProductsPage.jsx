@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { useSearchParams } from "react-router-dom";
+import { useLocation, useSearchParams } from "react-router-dom";
 
 import { getProducts, getCategories } from "../redux/productsSlice";
 
@@ -16,6 +16,7 @@ const PRODUCTS_PER_PAGE = 12;
 
 function ProductsPage() {
   const dispatch = useDispatch();
+  const location = useLocation();
   const [searchParams] = useSearchParams();
 
   const {
@@ -37,6 +38,10 @@ function ProductsPage() {
 
   const [sortBy, setSortBy] = useState("featured");
   const [currentPage, setCurrentPage] = useState(1);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location.pathname, location.search]);
 
   useEffect(() => {
     dispatch(getCategories());
