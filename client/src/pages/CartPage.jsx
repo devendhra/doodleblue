@@ -299,9 +299,12 @@ function CartPage() {
                     <div className="flex h-11 items-center gap-3 rounded-2xl border border-gray-300 bg-white px-4 text-sm font-bold shadow-sm">
                       <button
                         type="button"
-                        aria-label="Decrease quantity"
-                        disabled={product.quantity <= 1}
-                        onClick={() => changeQuantity(product.id, product.quantity - 1)}
+                        aria-label={product.quantity <= 1 ? "Remove item" : "Decrease quantity"}
+                        onClick={() =>
+                          product.quantity <= 1
+                            ? removeItem(product.id)
+                            : changeQuantity(product.id, product.quantity - 1)
+                        }
                         className="text-base text-gray-700 transition disabled:text-gray-300"
                       >
                         −
