@@ -1,0 +1,7 @@
+{
+  // Tailwind v4 at-rules (@theme, @utility, @source, etc.) are valid CSS
+  // for this project - stop the built-in validator flagging them.
+  "css.lint.unknownAtRules": "ignore",
+  "scss.lint.unknownAtRules": "ignore",
+  "less.lint.unknownAtRules": "ignore"
+}

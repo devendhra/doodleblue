@@ -5,9 +5,15 @@
 import { Router } from "express";
 import { body } from "express-validator";
 import validate from "../middleware/validate.js";
-import { validateCoupon } from "../controllers/coupon.controller.js";
+import {
+  listCoupons,
+  validateCoupon,
+} from "../controllers/coupon.controller.js";
 
 const router = Router();
+
+// GET /api/coupons - public list of usable coupon codes
+router.get("/", listCoupons);
 
 // POST /api/coupons/validate { code } - anyone may check a code
 router.post(

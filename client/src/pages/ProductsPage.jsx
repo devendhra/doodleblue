@@ -1,4 +1,3 @@
-
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useSearchParams } from "react-router-dom";
@@ -9,11 +8,9 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import ProductFilters from "../components/ProductFilters";
 import ProductSort from "../components/ProductSort";
-import ProductGrid from "../components/ProductGrid";
+import ProductCard from "../components/ProductCard";
 import Pagination from "../components/Pagination";
 import Loader from "../components/Loader";
-
-import "./ProductsPage.css";
 
 const PRODUCTS_PER_PAGE = 12;
 
@@ -21,21 +18,16 @@ function ProductsPage() {
   const dispatch = useDispatch();
   const [searchParams] = useSearchParams();
 
-  // Redux State
   const {
     products,
     categories,
     loading,
-    categoriesLoading,
     error,
     pagination,
-    categoriesError,
   } = useSelector((state) => state.products);
 
-  // Search from URL
   const searchText = searchParams.get("q") || "";
 
-  // Filters
   const [filters, setFilters] = useState({
     category: searchParams.get("category") || "",
     minPrice: "",
@@ -46,12 +38,10 @@ function ProductsPage() {
   const [sortBy, setSortBy] = useState("featured");
   const [currentPage, setCurrentPage] = useState(1);
 
-  // Fetch categories
   useEffect(() => {
     dispatch(getCategories());
   }, [dispatch]);
 
-  // Reset page when search or filters change
   useEffect(() => {
     setCurrentPage(1);
   }, [
@@ -63,7 +53,6 @@ function ProductsPage() {
     sortBy,
   ]);
 
-  // Fetch Products
   useEffect(() => {
     const params = {
       q: searchText,
@@ -77,7 +66,6 @@ function ProductsPage() {
       skip: (currentPage - 1) * PRODUCTS_PER_PAGE,
     };
 
-    // Remove empty parameters
     Object.keys(params).forEach((key) => {
       if (params[key] === "") {
         delete params[key];
@@ -85,20 +73,10 @@ function ProductsPage() {
     });
 
     dispatch(getProducts(params));
-  }, [
-    dispatch,
-    searchText,
-    filters,
-    sortBy,
-    currentPage,
-  ]);
+  }, [dispatch, searchText, filters, sortBy, currentPage]);
 
-  // Filter Change
-  const handleFilterChange = (updatedFilters) => {
-    setFilters(updatedFilters);
-  };
+  const handleFilterChange = (updatedFilters) => setFilters(updatedFilters);
 
-  // Reset Filters
   const resetFilters = () => {
     setFilters({
       category: "",
@@ -106,33 +84,21 @@ function ProductsPage() {
       maxPrice: "",
       minRating: "",
     });
-
     setSortBy("featured");
     setCurrentPage(1);
   };
 
-  // Sorting
   const handleSortChange = (value) => {
     setSortBy(value);
     setCurrentPage(1);
   };
 
-  // Pagination
   const handlePageChange = (page) => {
-    if (page < 1 || page > pagination.totalPages) {
-      return;
-    }
-
+    if (page < 1 || page > pagination.totalPages) return;
     setCurrentPage(page);
-
-    // Scroll back to products section
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
-  // Retry API request
   const handleRetry = () => {
     const params = {
       q: searchText,
@@ -145,13 +111,9 @@ function ProductsPage() {
       limit: PRODUCTS_PER_PAGE,
       skip: (currentPage - 1) * PRODUCTS_PER_PAGE,
     };
-
     Object.keys(params).forEach((key) => {
-      if (params[key] === "") {
-        delete params[key];
-      }
+      if (params[key] === "") delete params[key];
     });
-
     dispatch(getProducts(params));
   };
 
@@ -159,54 +121,37 @@ function ProductsPage() {
     <>
       <Header />
 
-      <main className="products-page">
-        {/* Page Header */}
-        <section className="products-page-header">
-          <div className="products-page-heading">
-            <span className="products-eyebrow">
-              BUILT FOR EVERY MOVE
+      <main className="min-h-screen bg-gray-50 text-gray-900">
+        {/* Page Hero Header */}
+        <section className="relative mb-8 w-full overflow-hidden bg-gray-950 px-4 py-16 text-center sm:py-20 lg:px-6 lg:py-24">
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-[400px] w-[400px] rounded-full bg-accent-600/20 blur-[100px] pointer-events-none" />
+
+          <div className="relative z-[1] mx-auto max-w-[800px]">
+            <span className="mb-4 inline-flex items-center gap-2 rounded-full border border-accent-500/40 bg-accent-500/10 px-4 py-2 text-xs font-black uppercase tracking-widest text-accent-400">
+              ⚡ PROFESSIONAL CATALOG
             </span>
-
-            <h1>
-              Shop Sports <span>Gear</span>
+            <h1 className="m-0 font-heading text-4xl font-black tracking-tight text-white sm:text-5xl lg:text-6xl">
+              Shop Sports <span className="text-accent-600">Gear</span>
             </h1>
-
-            <p>
-              Find your edge. Explore sports essentials
-              made for your next big performance.
+            <p className="mx-auto mt-4 max-w-[540px] text-sm leading-relaxed text-gray-300 sm:text-base font-medium">
+              Browse our complete inventory of professional-grade athletic equipment, footwear, and training gear.
             </p>
           </div>
         </section>
 
-        {/* Products Section */}
-        <section className="products-main container-custom">
-          {/* Search Heading */}
+        {/* Catalog Section */}
+        <div className="mx-auto max-w-[1440px] px-[4%] pb-20 lg:px-[6%]">
           {searchText && (
-            <div className="products-search-info">
-              <p>
-                Search results for{" "}
-                <strong>"{searchText}"</strong>
+            <div className="mb-6 rounded-2xl border border-gray-200 bg-white px-6 py-4 shadow-sm">
+              <p className="m-0 text-sm text-gray-600 font-medium">
+                Search results for <strong className="font-black text-gray-900">"{searchText}"</strong>
               </p>
             </div>
           )}
 
-          {/* Category Loading/Error */}
-          {categoriesLoading && (
-            <p className="products-category-message">
-              Loading categories...
-            </p>
-          )}
-
-          {!categoriesLoading && categoriesError && (
-            <p className="products-category-error" role="status">
-              Categories could not be loaded.
-              Product browsing is still available.
-            </p>
-          )}
-
-          <div className="products-layout">
-            {/* Sidebar */}
-            <aside className="products-sidebar">
+          <div className="grid items-start gap-8 lg:grid-cols-[280px_minmax(0,1fr)]">
+            {/* Filters Sidebar */}
+            <aside className="w-full">
               <ProductFilters
                 categories={categories}
                 filters={filters}
@@ -215,43 +160,47 @@ function ProductsPage() {
               />
             </aside>
 
-            {/* Products Content */}
-            <div className="products-content">
-              {/* Sorting */}
+            {/* Products Main Content */}
+            <div className="flex min-w-0 flex-col">
               <ProductSort
                 sortBy={sortBy}
                 onSortChange={handleSortChange}
                 totalProducts={pagination.total}
               />
 
-              {/* Loading */}
-              {loading && (
-                <Loader message="Finding your sports gear..." />
-              )}
+              {loading && <Loader message="Finding sports gear..." />}
 
-              {/* Error */}
               {!loading && error && (
-                <div className="products-error">
-                  <div className="products-error-icon">⚠️</div>
-
-                  <h3>Oops! Something went wrong.</h3>
-
-                  <p>{error}</p>
-
+                <div className="flex flex-col items-center justify-center rounded-3xl border border-danger-200 bg-danger-50 p-10 text-center">
+                  <h3 className="m-0 mb-2 font-heading text-xl font-bold text-gray-900">
+                    Failed to load products
+                  </h3>
+                  <p className="m-0 mb-6 text-sm text-gray-600">{error}</p>
                   <button
                     type="button"
-                    className="products-retry-button"
                     onClick={handleRetry}
+                    className="rounded-xl bg-accent-600 px-6 py-3 text-xs font-black uppercase tracking-wider text-white shadow-md hover:brightness-110"
                   >
                     Try Again
                   </button>
                 </div>
               )}
 
-              {/* Products */}
               {!loading && !error && (
                 <>
-                  <ProductGrid products={products} />
+                  {products.length === 0 ? (
+                    <div className="flex min-h-[300px] w-full flex-col items-center justify-center rounded-3xl border border-dashed border-gray-300 bg-white p-12 text-center shadow-sm">
+                      <div className="mb-4 text-4xl">🏃</div>
+                      <h3 className="font-heading text-xl font-black text-gray-900">No products found</h3>
+                      <p className="mt-2 text-sm text-gray-500 font-medium">Try changing your filters or search query.</p>
+                    </div>
+                  ) : (
+                    <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6">
+                      {products.map((product) => (
+                        <ProductCard key={product.id || product._id} product={product} />
+                      ))}
+                    </div>
+                  )}
 
                   <Pagination
                     currentPage={pagination.page || currentPage}
@@ -262,7 +211,7 @@ function ProductsPage() {
               )}
             </div>
           </div>
-        </section>
+        </div>
       </main>
 
       <Footer />

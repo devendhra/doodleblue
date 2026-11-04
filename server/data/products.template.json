@@ -1,0 +1,73 @@
+{
+  "_readme": [
+    "TEMPLATE for products.json - copy the entries below into server/data/products.json",
+    "and run:  npm run seed:products -- --force",
+    "REQUIRED fields: title, description, category (lowercase slug), price, stock, thumbnail.",
+    "Everything else is optional - delete lines you don't need.",
+    "The file can be a plain array [{...},{...}] OR this { \"products\": [...] } shape.",
+    "Delete the _readme array from your real products.json (it is just a note)."
+  ],
+  "products": [
+    {
+      "title": "SG Cricket Bat - English Willow",
+      "description": "Full-size English willow cricket bat with a mid sweet spot. Great balance for club matches and net practice.",
+      "category": "cricket",
+      "brand": "SG",
+      "price": 120,
+      "discountPercentage": 15,
+      "rating": 4.6,
+      "ratingCount": 128,
+      "stock": 10,
+      "tags": ["bat", "willow", "match"],
+      "thumbnail": "https://example.com/images/cricket-bat.jpg",
+      "images": [
+        "https://example.com/images/cricket-bat-1.jpg",
+        "https://example.com/images/cricket-bat-2.jpg"
+      ],
+      "specifications": {
+        "Weight": "1.2 kg",
+        "Willow": "English willow",
+        "Size": "Full size (SH)",
+        "Grip": "Rubber chevron"
+      },
+      "returnPolicy": "7-day easy returns",
+      "warrantyInformation": "6 months against manufacturing defects",
+      "reviews": [
+        {
+          "reviewerName": "Arun",
+          "rating": 5,
+          "comment": "Lovely pick-up and balance, ping is excellent.",
+          "date": "2025-01-10"
+        },
+        {
+          "reviewerName": "Meera",
+          "rating": 4,
+          "comment": "Good bat for the price, grip could be better.",
+          "date": "2025-01-18"
+        }
+      ]
+    },
+    {
+      "title": "Nike Running Shoes - Air Zoom",
+      "description": "Lightweight running shoes with responsive cushioning for daily training and 5K-10K runs.",
+      "category": "running",
+      "brand": "Nike",
+      "price": 89.99,
+      "discountPercentage": 0,
+      "rating": 4.3,
+      "ratingCount": 54,
+      "stock": 0,
+      "tags": ["shoes", "running", "training"],
+      "thumbnail": "https://example.com/images/running-shoes.jpg",
+      "images": [],
+      "specifications": {
+        "Weight": "240 g",
+        "Upper": "Engineered mesh",
+        "Sole": "Rubber"
+      },
+      "returnPolicy": "7-day easy returns",
+      "warrantyInformation": "1 year manufacturer warranty",
+      "reviews": []
+    }
+  ]
+}

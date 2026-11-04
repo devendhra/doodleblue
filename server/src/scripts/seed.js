@@ -27,14 +27,26 @@ const args = process.argv.slice(2);
 const onlyProducts = args.includes("--products");
 const force = args.includes("--force");
 
-// Upsert the demo coupon so it always exists with 10% off.
+// The coupons customers can use. Upserted so running the seed many
+// times never creates duplicates.
+const COUPONS = [
+  { code: "SAVE10", percentOff: 10 },
+  { code: "PROLANE15", percentOff: 15 },
+  { code: "MEGA20", percentOff: 20 },
+];
+
+// Upsert every coupon in the list so they all exist and stay active.
 const seedCoupon = async () => {
-  await Coupon.findOneAndUpdate(
-    { code: "SAVE10" },
-    { $set: { percentOff: 10, active: true } },
-    { upsert: true, new: true }
+  for (const { code, percentOff } of COUPONS) {
+    await Coupon.findOneAndUpdate(
+      { code },
+      { $set: { percentOff, active: true } },
+      { upsert: true, new: true }
+    );
+  }
+  console.log(
+    `Coupons ready: ${COUPONS.map((c) => `${c.code} (${c.percentOff}%)`).join(", ")}`
   );
-  console.log("Coupon SAVE10 ready (10% off, active)");
 };
 
 

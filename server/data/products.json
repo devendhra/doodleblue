@@ -1,1 +1,676 @@
-{"products":[{"title":"Test Ball","description":"d","category":"cricket","price":9.99,"stock":50,"thumbnail":"t.jpg","tags":["ball"],"reviews":[{"rating":5,"comment":"nice","reviewerName":"R","date":"2024-01-01"}]}]}
+{
+  "products": [
+    {
+      "title": "SG Cricket Bat - English Willow",
+      "description": "Full-size English willow cricket bat with a mid sweet spot. Great balance for club matches and net practice.",
+      "category": "cricket",
+      "brand": "SG",
+      "price": 9999,
+      "discountPercentage": 15,
+      "rating": 4.6,
+      "ratingCount": 128,
+      "stock": 10,
+      "tags": ["bat", "willow", "match"],
+      "thumbnail": "https://images.unsplash.com/photo-1593341646782-e0b495cffc6d?auto=format&fit=crop&w=800&q=80",
+      "images": [
+        "https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1531415074968-036ba1b575da?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1589801844976-b328a6fcf4a3?auto=format&fit=crop&w=800&q=80"
+      ],
+      "specifications": { "Weight": "1.2 kg", "Willow": "English willow", "Size": "Full size (SH)", "Grip": "Rubber chevron" },
+      "returnPolicy": "7-day easy returns",
+      "warrantyInformation": "6 months against manufacturing defects"
+    },
+    {
+      "title": "Nike Running Shoes - Air Zoom",
+      "description": "Lightweight running shoes with responsive cushioning for daily training and 5K-10K runs.",
+      "category": "running",
+      "brand": "Nike",
+      "price": 7499,
+      "discountPercentage": 10,
+      "rating": 4.3,
+      "ratingCount": 54,
+      "stock": 0,
+      "tags": ["shoes", "running", "training"],
+      "thumbnail": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80",
+      "images": [
+        "https://images.unsplash.com/photo-1608231387042-66d1773070a5?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1539185441755-769473a23570?auto=format&fit=crop&w=800&q=80"
+      ],
+      "specifications": { "Weight": "240 g", "Upper": "Engineered mesh", "Sole": "Rubber" },
+      "returnPolicy": "7-day easy returns",
+      "warrantyInformation": "1 year manufacturer warranty"
+    },
+    {
+      "title": "Yonex Carbonex Badminton Racket",
+      "description": "Durable graphite construction designed for explosive power and fast defensive racket handling.",
+      "category": "badminton",
+      "brand": "Yonex",
+      "price": 4999,
+      "discountPercentage": 10,
+      "rating": 4.5,
+      "ratingCount": 89,
+      "stock": 14,
+      "tags": ["badminton", "racket", "smash"],
+      "thumbnail": "https://images.unsplash.com/photo-1626224583764-f87db24ac4ea?auto=format&fit=crop&w=800&q=80",
+      "images": [
+        "https://images.unsplash.com/photo-1617083934579-11d17961d1bf?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1599586120429-48281b6f0403?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1569517282132-25d22f29206e?auto=format&fit=crop&w=800&q=80"
+      ],
+      "specifications": { "Weight": "85g", "Flex": "Medium", "String Tension": "24 lbs" },
+      "returnPolicy": "7-day easy returns",
+      "warrantyInformation": "3 months frame warranty"
+    },
+    {
+      "title": "Adidas Pro Training Football",
+      "description": "Thermally bonded seamless surface for a more predictable trajectory and lower water uptake.",
+      "category": "football",
+      "brand": "Adidas",
+      "price": 3499,
+      "discountPercentage": 20,
+      "rating": 4.7,
+      "ratingCount": 210,
+      "stock": 25,
+      "tags": ["football", "match", "ball"],
+      "thumbnail": "https://images.unsplash.com/photo-1614632537453-c40adc85c0fe?auto=format&fit=crop&w=800&q=80",
+      "images": [
+        "https://images.unsplash.com/photo-1579952363873-27f3bade9f55?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1508098682722-e99c43a406b2?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1517466787929-bc90951d0974?auto=format&fit=crop&w=800&q=80"
+      ],
+      "specifications": { "Size": "5", "Material": "PU casing", "Bladder": "Butyl" },
+      "returnPolicy": "7-day easy returns",
+      "warrantyInformation": "1 year shape retention warranty"
+    },
+    {
+      "title": "Spalding NBA Official Game Basketball",
+      "description": "Full grain leather cover provides exceptional grip and control for indoor hardwood courts.",
+      "category": "basketball",
+      "brand": "Spalding",
+      "price": 5999,
+      "discountPercentage": 5,
+      "rating": 4.8,
+      "ratingCount": 312,
+      "stock": 8,
+      "tags": ["basketball", "nba", "court"],
+      "thumbnail": "https://images.unsplash.com/photo-1546519638-68e109498ffc?auto=format&fit=crop&w=800&q=80",
+      "images": [
+        "https://images.unsplash.com/photo-1519766304817-4f37bda74a29?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1579952363873-27f3bade9f55?auto=format&fit=crop&w=800&q=80"
+      ],
+      "specifications": { "Size": "7", "Cover": "Composite leather", "Use": "Indoor" },
+      "returnPolicy": "7-day easy returns",
+      "warrantyInformation": "6 months warranty"
+    },
+    {
+      "title": "Hex Dumbbell Set 10kg Pair",
+      "description": "Rubber coated hexagonal dumbbells preventing rolling with ergonomic chrome handles.",
+      "category": "fitness",
+      "brand": "ProFit",
+      "price": 4499,
+      "discountPercentage": 12,
+      "rating": 4.4,
+      "ratingCount": 76,
+      "stock": 5,
+      "tags": ["weights", "gym", "strength"],
+      "thumbnail": "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?auto=format&fit=crop&w=800&q=80",
+      "images": [
+        "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1540497077202-7c8a3999166f?auto=format&fit=crop&w=800&q=80"
+      ],
+      "specifications": { "Weight": "10kg x 2", "Finish": "Rubber coated", "Handle": "Knurled steel" },
+      "returnPolicy": "7-day easy returns",
+      "warrantyInformation": "1 year warranty"
+    },
+    {
+      "title": "Puma Ultra Match Shin Guards",
+      "description": "High-impact resistant hard shield backed with perforated EVA foam for shock absorption.",
+      "category": "football",
+      "brand": "Puma",
+      "price": 1799,
+      "discountPercentage": 0,
+      "rating": 4.2,
+      "ratingCount": 40,
+      "stock": 18,
+      "tags": ["protection", "football", "gear"],
+      "thumbnail": "https://images.unsplash.com/photo-1517466787929-bc90951d0974?auto=format&fit=crop&w=800&q=80",
+      "images": [
+        "https://images.unsplash.com/photo-1614632537453-c40adc85c0fe?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1508098682722-e99c43a406b2?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1579952363873-27f3bade9f55?auto=format&fit=crop&w=800&q=80"
+      ],
+      "specifications": { "Size": "Medium", "Cushioning": "EVA foam", "Closure": "Slip-in with sleeve" },
+      "returnPolicy": "7-day easy returns",
+      "warrantyInformation": "3 months warranty"
+    },
+    {
+      "title": "Kookaburra Cricket Leather Ball",
+      "description": "Four-piece waxed and seasoned leather ball designed for premier club matches.",
+      "category": "cricket",
+      "brand": "Kookaburra",
+      "price": 1999,
+      "discountPercentage": 8,
+      "rating": 4.6,
+      "ratingCount": 92,
+      "stock": 30,
+      "tags": ["ball", "cricket", "leather"],
+      "thumbnail": "https://images.unsplash.com/photo-1532599298616-e46b744a3068?auto=format&fit=crop&w=800&q=80",
+      "images": [
+        "https://images.unsplash.com/photo-1593341646782-e0b495cffc6d?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1531415074968-036ba1b575da?auto=format&fit=crop&w=800&q=80"
+      ],
+      "specifications": { "Material": "Alum tanned leather", "Seam": "Hand stitched", "Weight": "156g" },
+      "returnPolicy": "7-day easy returns",
+      "warrantyInformation": "Standard return policy"
+    },
+    {
+      "title": "Under Armour HeatGear Compression Top",
+      "description": "Super-light UA HeatGear fabric delivers superior coverage without weighing you down.",
+      "category": "fitness",
+      "brand": "Under Armour",
+      "price": 2999,
+      "discountPercentage": 15,
+      "rating": 4.5,
+      "ratingCount": 115,
+      "stock": 22,
+      "tags": ["apparel", "compression", "gym"],
+      "thumbnail": "https://images.unsplash.com/photo-1581655353564-df123a1eb820?auto=format&fit=crop&w=800&q=80",
+      "images": [
+        "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1540497077202-7c8a3999166f?auto=format&fit=crop&w=800&q=80"
+      ],
+      "specifications": { "Material": "84% Polyester, 16% Elastane", "Fit": "Compression", "Tech": "Moisture Transport" },
+      "returnPolicy": "7-day easy returns",
+      "warrantyInformation": "30-day satisfaction guarantee"
+    },
+    {
+      "title": "Wilson Federer Pro Tennis Racket",
+      "description": "Inspired by Roger Federer's racket of choice, offering superb control and power for intermediates.",
+      "category": "tennis",
+      "brand": "Wilson",
+      "price": 8999,
+      "discountPercentage": 10,
+      "rating": 4.7,
+      "ratingCount": 142,
+      "stock": 7,
+      "tags": ["tennis", "racket", "court"],
+      "thumbnail": "https://images.unsplash.com/photo-1617083934579-11d17961d1bf?auto=format&fit=crop&w=800&q=80",
+      "images": [
+        "https://images.unsplash.com/photo-1622163642998-1ea32b0bbc67?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1599586120429-48281b6f0403?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1626224583764-f87db24ac4ea?auto=format&fit=crop&w=800&q=80"
+      ],
+      "specifications": { "Head Size": "105 sq in", "Weight": "275g", "String Pattern": "16x19" },
+      "returnPolicy": "7-day easy returns",
+      "warrantyInformation": "1 year frame warranty"
+    },
+    {
+      "title": "Asics Gel-Kayano Running Shoes",
+      "description": "Advanced stability running shoes with plush FF BLAST PLUS cushioning for long-distance comfort.",
+      "category": "running",
+      "brand": "Asics",
+      "price": 11999,
+      "discountPercentage": 12,
+      "rating": 4.9,
+      "ratingCount": 260,
+      "stock": 11,
+      "tags": ["shoes", "running", "marathon"],
+      "thumbnail": "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=800&q=80",
+      "images": [
+        "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1608231387042-66d1773070a5?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1539185441755-769473a23570?auto=format&fit=crop&w=800&q=80"
+      ],
+      "specifications": { "Cushioning": "FF BLAST PLUS ECO", "Support": "Stability", "Drop": "10mm" },
+      "returnPolicy": "7-day easy returns",
+      "warrantyInformation": "1 year manufacturer warranty"
+    },
+    {
+      "title": "Reebok Resistance Band Set",
+      "description": "Multi-resistance latex bands for strength training, mobility work, and physical therapy rehabilitation.",
+      "category": "fitness",
+      "brand": "Reebok",
+      "price": 2299,
+      "discountPercentage": 20,
+      "rating": 4.4,
+      "ratingCount": 98,
+      "stock": 40,
+      "tags": ["bands", "fitness", "strength"],
+      "thumbnail": "https://images.unsplash.com/photo-1598289431512-b97bce9f7ebc?auto=format&fit=crop&w=800&q=80",
+      "images": [
+        "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1540497077202-7c8a3999166f?auto=format&fit=crop&w=800&q=80"
+      ],
+      "specifications": { "Levels": "Light, Medium, Heavy", "Material": "Natural latex", "Includes": "Door anchor" },
+      "returnPolicy": "7-day easy returns",
+      "warrantyInformation": "6 months warranty"
+    },
+    {
+      "title": "Speedo Elite Swim Goggles",
+      "description": "Anti-fog mirror coated wide-vision lenses with low-profile hydrodynamic design for competitive swimming.",
+      "category": "swimming",
+      "brand": "Speedo",
+      "price": 2199,
+      "discountPercentage": 0,
+      "rating": 4.5,
+      "ratingCount": 67,
+      "stock": 19,
+      "tags": ["swim", "goggles", "pool"],
+      "thumbnail": "https://images.unsplash.com/photo-1575429198097-0414ec08e8cd?auto=format&fit=crop&w=800&q=80",
+      "images": [
+        "https://images.unsplash.com/photo-1530549387789-4c1017266635?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1519315901367-f34ff9154487?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1576092768241-dec231879fc3?auto=format&fit=crop&w=800&q=80"
+      ],
+      "specifications": { "Lens": "Polycarbonate anti-fog", "Seal": "Soft silicone", "Strap": "Dual head strap" },
+      "returnPolicy": "7-day easy returns",
+      "warrantyInformation": "1 year warranty"
+    },
+    {
+      "title": "Decathlon Yoga Mat 8mm Comfort",
+      "description": "Thick supportive mat providing excellent cushioning for floor exercises, yoga, and pilates.",
+      "category": "fitness",
+      "brand": "Domyos",
+      "price": 1899,
+      "discountPercentage": 10,
+      "rating": 4.6,
+      "ratingCount": 180,
+      "stock": 24,
+      "tags": ["yoga", "mat", "fitness"],
+      "thumbnail": "https://images.unsplash.com/photo-1601925260368-ae2f83cf8b7f?auto=format&fit=crop&w=800&q=80",
+      "images": [
+        "https://images.unsplash.com/photo-1545205597-3d9d02c29597?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=800&q=80"
+      ],
+      "specifications": { "Thickness": "8mm", "Dimensions": "170cm x 60cm", "Material": "NBR Foam" },
+      "returnPolicy": "7-day easy returns",
+      "warrantyInformation": "2 years warranty"
+    },
+    {
+      "title": "Vector X Agility Training Ladder",
+      "description": "6-meter durable nylon strap agility ladder with adjustable plastic rungs for speed drills.",
+      "category": "training",
+      "brand": "Vector X",
+      "price": 1499,
+      "discountPercentage": 15,
+      "rating": 4.3,
+      "ratingCount": 51,
+      "stock": 15,
+      "tags": ["agility", "speed", "training"],
+      "thumbnail": "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=800&q=80",
+      "images": [
+        "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1540497077202-7c8a3999166f?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?auto=format&fit=crop&w=800&q=80"
+      ],
+      "specifications": { "Length": "6 meters", "Rungs": "12 adjustable plastic rungs", "Bag": "Includes carry bag" },
+      "returnPolicy": "7-day easy returns",
+      "warrantyInformation": "6 months warranty"
+    },
+    {
+      "title": "Nivia Storm Football Studs",
+      "description": "Molded TPU stud configuration optimized for traction and grip on firm natural grass surfaces.",
+      "category": "football",
+      "brand": "Nivia",
+      "price": 2799,
+      "discountPercentage": 10,
+      "rating": 4.1,
+      "ratingCount": 83,
+      "stock": 12,
+      "tags": ["boots", "football", "cleats"],
+      "thumbnail": "https://images.unsplash.com/photo-1579952363873-27f3bade9f55?auto=format&fit=crop&w=800&q=80",
+      "images": [
+        "https://images.unsplash.com/photo-1614632537453-c40adc85c0fe?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1508098682722-e99c43a406b2?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1517466787929-bc90951d0974?auto=format&fit=crop&w=800&q=80"
+      ],
+      "specifications": { "Sole": "Molded TPU", "Upper": "Synthetic leather", "Fastening": "Lace-up" },
+      "returnPolicy": "7-day easy returns",
+      "warrantyInformation": "3 months warranty"
+    },
+    {
+      "title": "Cosco Volleyball Play Pitch",
+      "description": "Molded rubber construction designed for recreational outdoor matches and beach play.",
+      "category": "volleyball",
+      "brand": "Cosco",
+      "price": 1599,
+      "discountPercentage": 0,
+      "rating": 4.3,
+      "ratingCount": 62,
+      "stock": 16,
+      "tags": ["volleyball", "ball", "beach"],
+      "thumbnail": "https://images.unsplash.com/photo-1612872087720-bb876e2e67d1?auto=format&fit=crop&w=800&q=80",
+      "images": [
+        "https://images.unsplash.com/photo-1546519638-68e109498ffc?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1519766304817-4f37bda74a29?auto=format&fit=crop&w=800&q=80"
+      ],
+      "specifications": { "Material": "Soft rubber molded", "Panels": "18 panel construction", "Weight": "280g" },
+      "returnPolicy": "7-day easy returns",
+      "warrantyInformation": "Standard warranty"
+    },
+    {
+      "title": "Strauss Steel Skipping Jump Rope",
+      "description": "Adjustable steel wire rope with ball bearings for ultra-fast smooth rotations during cardio workouts.",
+      "category": "fitness",
+      "brand": "Strauss",
+      "price": 999,
+      "discountPercentage": 25,
+      "rating": 4.5,
+      "ratingCount": 134,
+      "stock": 35,
+      "tags": ["rope", "cardio", "fitness"],
+      "thumbnail": "https://images.unsplash.com/photo-1518310383802-640c2de311b2?auto=format&fit=crop&w=800&q=80",
+      "images": [
+        "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1540497077202-7c8a3999166f?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?auto=format&fit=crop&w=800&q=80"
+      ],
+      "specifications": { "Cable": "PVC coated steel wire", "Handles": "Aluminum anti-slip", "Length": "Adjustable 3m" },
+      "returnPolicy": "7-day easy returns",
+      "warrantyInformation": "3 months warranty"
+    },
+    {
+      "title": "Puma Cricket Helmet - Steel Bar",
+      "description": "Impact-resistant injection molded outer shell with hardened steel visor for facial protection.",
+      "category": "cricket",
+      "brand": "Puma",
+      "price": 3999,
+      "discountPercentage": 10,
+      "rating": 4.7,
+      "ratingCount": 78,
+      "stock": 9,
+      "tags": ["helmet", "protection", "cricket"],
+      "thumbnail": "https://images.unsplash.com/photo-1569517282132-25d22f29206e?auto=format&fit=crop&w=800&q=80",
+      "images": [
+        "https://images.unsplash.com/photo-1593341646782-e0b495cffc6d?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1532599298616-e46b744a3068?auto=format&fit=crop&w=800&q=80"
+      ],
+      "specifications": { "Shell": "ABS thermoplastic", "Visor": "Hardened steel grid", "Adjuster": "Dial fit system" },
+      "returnPolicy": "7-day easy returns",
+      "warrantyInformation": "6 months warranty"
+    },
+    {
+      "title": "Oakley Radar EV Path Sunglasses",
+      "description": "Prizm lens technology designed to enhance color, contrast and detail for outdoor sports performance.",
+      "category": "accessories",
+      "brand": "Oakley",
+      "price": 12999,
+      "discountPercentage": 5,
+      "rating": 4.8,
+      "ratingCount": 95,
+      "stock": 6,
+      "tags": ["sunglasses", "cycling", "running"],
+      "thumbnail": "https://images.unsplash.com/photo-1572635196237-14b3f281503f?auto=format&fit=crop&w=800&q=80",
+      "images": [
+        "https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1508296695146-257a814070b4?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=800&q=80"
+      ],
+      "specifications": { "Lens Tech": "Prizm Road", "Frame": "O Matter lightweight", "UV Protection": "100%" },
+      "returnPolicy": "7-day easy returns",
+      "warrantyInformation": "2 years manufacturer warranty"
+    },
+    {
+      "title": "Garmin Forerunner 55 GPS Watch",
+      "description": "Easy-to-use GPS running smartwatch with advanced training guidance and heart rate tracking.",
+      "category": "accessories",
+      "brand": "Garmin",
+      "price": 14999,
+      "discountPercentage": 10,
+      "rating": 4.9,
+      "ratingCount": 310,
+      "stock": 4,
+      "tags": ["watch", "gps", "fitness"],
+      "thumbnail": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=800&q=80",
+      "images": [
+        "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1510017803434-a899398421b3?auto=format&fit=crop&w=800&q=80"
+      ],
+      "specifications": { "Display": "Sunlight-visible transflective", "Battery Life": "Up to 2 weeks", "GPS": "Built-in GPS" },
+      "returnPolicy": "7-day easy returns",
+      "warrantyInformation": "1 year Garmin warranty"
+    },
+    {
+      "title": "Hydro Flask Insulated Water Bottle 32oz",
+      "description": "TempShield double-wall vacuum insulation keeps drinks ice cold for up to 24 hours.",
+      "category": "accessories",
+      "brand": "Hydro Flask",
+      "price": 3499,
+      "discountPercentage": 0,
+      "rating": 4.9,
+      "ratingCount": 420,
+      "stock": 30,
+      "tags": ["bottle", "hydration", "gym"],
+      "thumbnail": "https://images.unsplash.com/photo-1602143407151-7111542de6e8?auto=format&fit=crop&w=800&q=80",
+      "images": [
+        "https://images.unsplash.com/photo-1523362628745-0c100150b504?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=800&q=80"
+      ],
+      "specifications": { "Capacity": "946 ml", "Material": "Stainless Steel", "Cap": "Insulated Flex Cap" },
+      "returnPolicy": "7-day easy returns",
+      "warrantyInformation": "Lifetime warranty"
+    },
+    {
+      "title": "Thule AllTrail Backpack 35L",
+      "description": "Versatile technical backpack designed for day hikes, trekking, and outdoor sports adventures.",
+      "category": "accessories",
+      "brand": "Thule",
+      "price": 9999,
+      "discountPercentage": 15,
+      "rating": 4.7,
+      "ratingCount": 88,
+      "stock": 5,
+      "tags": ["backpack", "outdoor", "hiking"],
+      "thumbnail": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=800&q=80",
+      "images": [
+        "https://images.unsplash.com/photo-1622560480605-d83c853bc5c3?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1544441893-675973e31985?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1551698618-1dfe5d97d256?auto=format&fit=crop&w=800&q=80"
+      ],
+      "specifications": { "Volume": "35 Liters", "Material": "420D Dobby Poly", "Weight": "1.29 kg" },
+      "returnPolicy": "7-day easy returns",
+      "warrantyInformation": "Limited Lifetime warranty"
+    },
+    {
+      "title": "Black Diamond Trail Trekking Poles",
+      "description": "Durable aluminum 3-section poles with FlickLock adjustability for stability on rough terrain.",
+      "category": "accessories",
+      "brand": "Black Diamond",
+      "price": 6999,
+      "discountPercentage": 10,
+      "rating": 4.6,
+      "ratingCount": 74,
+      "stock": 11,
+      "tags": ["poles", "hiking", "trekking"],
+      "thumbnail": "https://images.unsplash.com/photo-1551698618-1dfe5d97d256?auto=format&fit=crop&w=800&q=80",
+      "images": [
+        "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1622560480605-d83c853bc5c3?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1544441893-675973e31985?auto=format&fit=crop&w=800&q=80"
+      ],
+      "specifications": { "Material": "Aluminum", "Collapsed Length": "64 cm", "Weight Pair": "560 g" },
+      "returnPolicy": "7-day easy returns",
+      "warrantyInformation": "1 year warranty"
+    },
+    {
+      "title": "Babolat Pro Tour Overgrip 3-Pack",
+      "description": "Super absorbent and tacky feel overgrip used by touring professionals for secure racket handle grip.",
+      "category": "tennis",
+      "brand": "Babolat",
+      "price": 799,
+      "discountPercentage": 0,
+      "rating": 4.7,
+      "ratingCount": 190,
+      "stock": 50,
+      "tags": ["tennis", "grip", "accessories"],
+      "thumbnail": "https://images.unsplash.com/photo-1622163642998-1ea32b0bbc67?auto=format&fit=crop&w=800&q=80",
+      "images": [
+        "https://images.unsplash.com/photo-1617083934579-11d17961d1bf?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1599586120429-48281b6f0403?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1626224583764-f87db24ac4ea?auto=format&fit=crop&w=800&q=80"
+      ],
+      "specifications": { "Thickness": "0.60 mm", "Feel": "Tacky", "Quantity": "3 grips per pack" },
+      "returnPolicy": "7-day easy returns",
+      "warrantyInformation": "Standard return policy"
+    },
+    {
+      "title": "TriggerPoint GRID Foam Roller",
+      "description": "Multidensity EVA foam surface delivers targeted massage for muscle recovery and myofascial release.",
+      "category": "fitness",
+      "brand": "TriggerPoint",
+      "price": 2999,
+      "discountPercentage": 10,
+      "rating": 4.8,
+      "ratingCount": 340,
+      "stock": 15,
+      "tags": ["recovery", "foamroller", "fitness"],
+      "thumbnail": "https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=800&q=80",
+      "images": [
+        "https://images.unsplash.com/photo-1601925260368-ae2f83cf8b7f?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1545205597-3d9d02c29597?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=800&q=80"
+      ],
+      "specifications": { "Length": "13 inches", "Diameter": "5.5 inches", "Weight Limit": "225 kg" },
+      "returnPolicy": "7-day easy returns",
+      "warrantyInformation": "1 year warranty"
+    },
+    {
+      "title": "Champion Powerblend Fleece Hoodie",
+      "description": "Warm and durable midweight fleece hoodie with athletic fit for post-workout cool-downs.",
+      "category": "apparel",
+      "brand": "Champion",
+      "price": 3799,
+      "discountPercentage": 20,
+      "rating": 4.4,
+      "ratingCount": 110,
+      "stock": 18,
+      "tags": ["hoodie", "apparel", "casual"],
+      "thumbnail": "https://images.unsplash.com/photo-1556905055-8f358a7a47b2?auto=format&fit=crop&w=800&q=80",
+      "images": [
+        "https://images.unsplash.com/photo-1581655353564-df123a1eb820?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1540497077202-7c8a3999166f?auto=format&fit=crop&w=800&q=80"
+      ],
+      "specifications": { "Material": "50% Cotton, 50% Polyester", "Pocket": "Kangaroo pouch", "Fit": "Athletic" },
+      "returnPolicy": "7-day easy returns",
+      "warrantyInformation": "30-day return policy"
+    },
+    {
+      "title": "Nike Club Team Duffel Bag",
+      "description": "Durable water-resistant bottom and spacious main compartment for all your gym gear and shoes.",
+      "category": "accessories",
+      "brand": "Nike",
+      "price": 3199,
+      "discountPercentage": 0,
+      "rating": 4.6,
+      "ratingCount": 165,
+      "stock": 14,
+      "tags": ["bag", "duffel", "gym"],
+      "thumbnail": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=800&q=80",
+      "images": [
+        "https://images.unsplash.com/photo-1622560480605-d83c853bc5c3?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1544441893-675973e31985?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1551698618-1dfe5d97d256?auto=format&fit=crop&w=800&q=80"
+      ],
+      "specifications": { "Capacity": "60 Liters", "Material": "100% Polyester", "Compartments": "Vented wet/dry pocket" },
+      "returnPolicy": "7-day easy returns",
+      "warrantyInformation": "1 year warranty"
+    },
+    {
+      "title": "Columbia Watertight II Rain Jacket",
+      "description": "Omni-Tech waterproof breathable seam-sealed jacket to keep you dry during wet outdoor runs.",
+      "category": "apparel",
+      "brand": "Columbia",
+      "price": 6999,
+      "discountPercentage": 15,
+      "rating": 4.5,
+      "ratingCount": 94,
+      "stock": 8,
+      "tags": ["jacket", "waterproof", "outdoor"],
+      "thumbnail": "https://images.unsplash.com/photo-1544441893-675973e31985?auto=format&fit=crop&w=800&q=80",
+      "images": [
+        "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1622560480605-d83c853bc5c3?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1551698618-1dfe5d97d256?auto=format&fit=crop&w=800&q=80"
+      ],
+      "specifications": { "Technology": "Omni-Tech waterproof", "Fabric": "100% Nylon", "Pockets": "Zippered hand pockets" },
+      "returnPolicy": "7-day easy returns",
+      "warrantyInformation": "Limited lifetime warranty"
+    },
+    {
+      "title": "Oakley Kitchen Sink Backpack",
+      "description": "Heavy-duty tactical backpack featuring dedicated laptop sleeve, shoe compartment, and rugged hardware.",
+      "category": "accessories",
+      "brand": "Oakley",
+      "price": 13999,
+      "discountPercentage": 10,
+      "rating": 4.7,
+      "ratingCount": 105,
+      "stock": 3,
+      "tags": ["backpack", "tactical", "heavy-duty"],
+      "thumbnail": "https://images.unsplash.com/photo-1622560480605-d83c853bc5c3?auto=format&fit=crop&w=800&q=80",
+      "images": [
+        "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1544441893-675973e31985?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1551698618-1dfe5d97d256?auto=format&fit=crop&w=800&q=80"
+      ],
+      "specifications": { "Capacity": "34 Liters", "Laptop Compartment": "Fits up to 17 inch", "Material": "100% Nylon" },
+      "returnPolicy": "7-day easy returns",
+      "warrantyInformation": "1 year warranty"
+    },
+    {
+      "title": "Rawlings Renegade Series Baseball Glove",
+      "description": "All-leather shell with deep pocket design tailored for fast break-in and reliable fielding performance.",
+      "category": "baseball",
+      "brand": "Rawlings",
+      "price": 5999,
+      "discountPercentage": 12,
+      "rating": 4.6,
+      "ratingCount": 81,
+      "stock": 7,
+      "tags": ["baseball", "glove", "fielding"],
+      "thumbnail": "https://images.unsplash.com/photo-1592656094267-764a45160876?auto=format&fit=crop&w=800&q=80",
+      "images": [
+        "https://images.unsplash.com/photo-1593341646782-e0b495cffc6d?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1531415074968-036ba1b575da?auto=format&fit=crop&w=800&q=80"
+      ],
+      "specifications": { "Size": "12 inch", "Hand": "Right Hand Throw", "Web": "Pro Mesh basket web" },
+      "returnPolicy": "7-day easy returns",
+      "warrantyInformation": "1 year warranty"
+    },
+    {
+      "title": "Easton BB14S3 S3 Aluminum Baseball Bat",
+      "description": "THT100 aluminum alloy barrel providing explosive pop and extended sweet spot for youth league players.",
+      "category": "baseball",
+      "brand": "Easton",
+      "price": 7499,
+      "discountPercentage": 20,
+      "rating": 4.4,
+      "ratingCount": 45,
+      "stock": 5,
+      "tags": ["bat", "baseball", "alloy"],
+      "thumbnail": "https://images.unsplash.com/photo-1593341646782-e0b495cffc6d?auto=format&fit=crop&w=800&q=80",
+      "images": [
+        "https://images.unsplash.com/photo-1592656094267-764a45160876?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1531415074968-036ba1b575da?auto=format&fit=crop&w=800&q=80"
+      ],
+      "specifications": { "Material": "THT100 Aluminum", "Drop": "-3", "Certification": "BBCOR approved" },
+      "returnPolicy": "7-day easy returns",
+      "warrantyInformation": "1 year manufacturer warranty"
+    }
+  ]
+}

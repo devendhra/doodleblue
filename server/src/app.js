@@ -1,6 +1,11 @@
-// This file builds the Express "app" - the object that handles all
-// incoming HTTP requests. Middleware runs top-to-bottom: security and
-// parsing first, then routes, then the 404 and error handlers LAST.
+// This file builds and STARTS the Express "app" - it used to be split
+// into app.js (setup) + server.js (startup), now combined into one file.
+// Steps: load .env -> build middleware -> mount routes -> connect to
+// MongoDB -> start listening for requests.
+
+// Must be the FIRST import so process.env is ready before other files
+// (like db.js or the models) try to read variables from it.
+import "dotenv/config";
 
 import express from "express";
 import cors from "cors";
@@ -14,6 +19,7 @@ import couponRoutes from "./routes/coupon.routes.js";
 import orderRoutes from "./routes/order.routes.js";
 import notFound from "./middleware/notFound.js";
 import errorHandler from "./middleware/errorHandler.js";
+import connectDB from "./config/db.js";
 
 const app = express();
 
@@ -66,4 +72,12 @@ app.use("/api/orders", orderRoutes);
 app.use(notFound);      // no route matched -> 404
 app.use(errorHandler);  // turns thrown errors into clean JSON responses
 
-export default app;
+// Connect to MongoDB Atlas, then start listening.
+// If the DB connection fails, the process exits inside connectDB.
+await connectDB();
+
+const PORT = process.env.PORT || 3000;
+
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
+});

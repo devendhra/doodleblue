@@ -1,5 +1,8 @@
 
-:root {
+/* @theme exposes every token as a Tailwind utility (bg-primary-600,
+   text-accent-600, rounded-lg, shadow-md, font-heading, ...) AND still
+   emits the variables so existing var(--color-*) styles keep working. */
+@theme {
   /* Brand */
   --color-primary-700: #3730A3;
   --color-primary-600: #4338CA;
