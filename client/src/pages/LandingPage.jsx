@@ -1,8 +1,7 @@
-import { useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-import { getProducts } from "../redux/productsSlice";
+import { fetchProducts } from "../services/api";
 
 import Header from "../components/Header";
 import Footer from "../components/Footer";
@@ -12,34 +11,41 @@ import CategorySection from "../components/CategorySection";
 import ProductGrid from "../components/ProductGrid";
 import Loader from "../components/Loader";
 
+const FEATURED_CATEGORIES = ["training", "basketball", "tennis", "volleyball"];
 function LandingPage() {
-  const dispatch = useDispatch();
   const navigate = useNavigate();
-
-  const { products, loading, error } = useSelector((state) => state.products);
+  const [featuredProducts, setFeaturedProducts] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
-    dispatch(
-      getProducts({
-        sort: "featured",
-        page: 1,
-        limit: 8,
-        skip: 0,
-      })
-    );
-  }, [dispatch]);
+    loadFeaturedProducts();
+  }, []);
+
+  const loadFeaturedProducts = async () => {
+    setLoading(true);
+    setError(null);
+
+    try {
+      const results = await Promise.all(
+        FEATURED_CATEGORIES.map(async (category) => {
+          const response = await fetchProducts({ category, sort: "featured", limit: 1 });
+          const products = Array.isArray(response) ? response : response.products || [];
+          return products[0];
+        })
+      );
+      setFeaturedProducts(results.filter(Boolean));
+    } catch (requestError) {
+      setError(requestError.response?.data?.message || requestError.message || "Failed to load products.");
+    } finally {
+      setLoading(false);
+    }
+  };
 
   const handleShopNow = () => navigate("/products");
 
   const handleRetry = () => {
-    dispatch(
-      getProducts({
-        sort: "featured",
-        page: 1,
-        limit: 8,
-        skip: 0,
-      })
-    );
+    loadFeaturedProducts();
   };
 
   return (
@@ -108,7 +114,7 @@ function LandingPage() {
               </div>
             )}
 
-            {!loading && !error && <ProductGrid products={products} />}
+            {!loading && !error && <ProductGrid products={featuredProducts} />}
 
             {/* Bottom Call to Action Banner */}
             <div className="relative isolate mt-16 flex flex-col items-start justify-between gap-8 overflow-hidden rounded-3xl bg-gray-950 px-8 py-10 shadow-2xl sm:px-12 sm:py-14 lg:mt-24 lg:flex-row lg:items-center">

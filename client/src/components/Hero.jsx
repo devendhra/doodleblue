@@ -40,8 +40,8 @@ function Hero() {
           </div>
 
           <h1 className="m-0 font-heading text-5xl font-black leading-[1.05] tracking-tight text-gray-900 sm:text-6xl lg:text-7xl">
-            PLAY HARDER.<br />
-            <span className="text-accent-600 underline decoration-accent-500/30 decoration-wavy">GO BEYOND.</span>
+            PLAY HARDER<br />
+            <span className="text-accent-600  decoration-accent-500/30 decoration-wavy">GO BEYOND</span>
           </h1>
 
           <p className="mb-8 mt-6 max-w-[520px] text-base leading-relaxed text-gray-600 sm:text-lg font-medium">

@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { CART_EVENT, clearCart, getCartCount } from "../utils/cart";
+import logoMark from "../assests/logowithoutname.svg";
 
 // Sticky site header: Sporty Logo, ordered navigation, live search, cart with badge,
 // and user authentication state. Designed with massive energetic sports styling.
@@ -61,13 +62,12 @@ function Header() {
         {/* Sporty Logo */}
         <Link
           to="/"
-          className="group/logo inline-flex shrink-0 items-center gap-3 text-gray-900 no-underline"
+          className="group/logo inline-flex shrink-0 items-center gap-2 text-gray-900 no-underline"
           aria-label="Prolane home"
           onClick={closeMenu}
         >
-          <div className="relative flex h-12 w-12 items-center justify-center rounded-2xl bg-gray-950 font-heading text-xl font-black text-white shadow-lg transition duration-300 ease-out group-hover/logo:scale-105 group-hover/logo:rotate-6 sm:h-13 sm:w-13 sm:text-2xl border border-gray-800">
-            <span className="absolute -top-1 -right-1 flex h-4 w-4 items-center justify-center rounded-full bg-accent-600 text-[9px] font-black text-white shadow">⚡</span>
-            P
+          <div className="relative flex h-16 w-16 shrink-0 items-center justify-center transition duration-300 ease-out group-hover/logo:scale-105 group-hover/logo:rotate-6">
+            <img src={logoMark} alt="" className="h-14 w-14 object-contain" />
           </div>
           <div className="flex flex-col">
             <span className="whitespace-nowrap font-heading text-[24px] font-black tracking-tight sm:text-[28px] leading-none text-gray-950">
