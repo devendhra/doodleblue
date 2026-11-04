@@ -235,7 +235,7 @@ function Orders() {
                       <button
                         type="button"
                         onClick={() => setCancelTarget(order)}
-                        className="rounded-xl border border-danger-300 bg-danger-50 px-5 py-2.5 text-xs font-black uppercase tracking-wider text-danger-700 transition hover:bg-danger-600 hover:text-white"
+                        className="cursor-pointer rounded-xl border border-danger-300 bg-danger-50 px-5 py-2.5 text-xs font-black uppercase tracking-wider text-danger-700"
                       >
                         Cancel Order
                       </button>
